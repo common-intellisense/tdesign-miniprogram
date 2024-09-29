@@ -1,0 +1,94 @@
+{
+  "name": "TProgress",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "color": {
+      "description": "进度条颜色。示例：'#ED7B2F' 或 'orange' 或 ['#f00', '#0ff', '#f0f'] 或 { '0%': '#f00', '100%': '#0ff' } 或  { from: '#000', to: '#000' } 等。TS 类型：string | Array<string> | Record<string, string>",
+      "description_zh": "进度条颜色。示例：'#ED7B2F' 或 'orange' 或 ['#f00', '#0ff', '#f0f'] 或 { '0%': '#f00', '100%': '#0ff' } 或  { from: '#000', to: '#000' } 等。TS 类型：string | Array<string> | Record<string, string>",
+      "default": "''",
+      "value": "",
+      "type": "String / Object / Array",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "进度百分比，可自定义。通用类型定义",
+      "description_zh": "进度百分比，可自定义。通用类型定义",
+      "default": "true",
+      "value": "",
+      "type": "String / Boolean / Slot",
+      "required": false,
+      "version": ""
+    },
+    "percentage": {
+      "description": "进度条百分比",
+      "description_zh": "进度条百分比",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "status": {
+      "description": "进度条状态。可选项：success/error/warning/active。TS 类型：ProgressStatus type ProgressStatus = 'success' | 'error' | 'warning' | 'active'。详细类型定义",
+      "description_zh": "进度条状态。可选项：success/error/warning/active。TS 类型：ProgressStatus type ProgressStatus = 'success' | 'error' | 'warning' | 'active'。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "success/error/warning/active",
+      "required": false,
+      "version": ""
+    },
+    "stroke-width": {
+      "description": "进度条线宽，默认单位 px",
+      "description_zh": "进度条线宽，默认单位 px",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "进度条风格。值为 line，标签（label）显示在进度条右侧；值为 plump，标签（label）显示在进度条里面；值为 circle，标签（label）显示在进度条正中间。可选项：line/plump/circle。TS 类型：ProgressTheme type ProgressTheme = 'line' | 'plump' | 'circle'。详细类型定义",
+      "description_zh": "进度条风格。值为 line，标签（label）显示在进度条右侧；值为 plump，标签（label）显示在进度条里面；值为 circle，标签（label）显示在进度条正中间。可选项：line/plump/circle。TS 类型：ProgressTheme type ProgressTheme = 'line' | 'plump' | 'circle'。详细类型定义",
+      "default": "line",
+      "value": "",
+      "type": "line/plump/circle",
+      "required": false,
+      "version": ""
+    },
+    "track-color": {
+      "description": "进度条未完成部分颜色",
+      "description_zh": "进度条未完成部分颜色",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/progress",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/progress",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Progress"
+}

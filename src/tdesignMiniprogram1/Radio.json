@@ -1,0 +1,173 @@
+{
+  "name": "TRadio",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "allow-uncheck": {
+      "description": "是否允许取消选中",
+      "description_zh": "是否允许取消选中",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "block": {
+      "description": "是否为块级元素",
+      "description_zh": "是否为块级元素",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "checked": {
+      "description": "是否选中",
+      "description_zh": "是否选中",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "default-checked": {
+      "description": "是否选中。非受控属性",
+      "description_zh": "是否选中。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "content": {
+      "description": "单选内容。通用类型定义",
+      "description_zh": "单选内容。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "content-disabled": {
+      "description": "是否禁用组件内容（content）触发选中",
+      "description_zh": "是否禁用组件内容（content）触发选中",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否为禁用态",
+      "description_zh": "是否为禁用态",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "自定义选中图标和非选中图标。使用 Array 时表示：[选中态图标，非选中态图标]。使用 String 时，值为 circle 表示填充型图标、值为 line 表示描边型图标、值为 dot 表示圆点图标，值为 slot 时使用插槽。TS 类型：'circle' | 'line' | 'dot' | Array<string>",
+      "description_zh": "自定义选中图标和非选中图标。使用 Array 时表示：[选中态图标，非选中态图标]。使用 String 时，值为 circle 表示填充型图标、值为 line 表示描边型图标、值为 dot 表示圆点图标，值为 slot 时使用插槽。TS 类型：'circle' | 'line' | 'dot' | Array<string>",
+      "default": "'circle'",
+      "value": "",
+      "type": "String / Array / Slot",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "主文案。通用类型定义",
+      "description_zh": "主文案。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "max-content-row": {
+      "description": "内容最大行数限制",
+      "description_zh": "内容最大行数限制",
+      "default": "5",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "max-label-row": {
+      "description": "主文案最大行数限制",
+      "description_zh": "主文案最大行数限制",
+      "default": "3",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "name": {
+      "description": "HTML 元素原生属性",
+      "description_zh": "HTML 元素原生属性",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "placement": {
+      "description": "复选框和内容相对位置。可选项：left/right",
+      "description_zh": "复选框和内容相对位置。可选项：left/right",
+      "default": "left",
+      "value": "",
+      "type": "left/right",
+      "required": false,
+      "version": ""
+    },
+    "readonly": {
+      "description": "只读状态",
+      "description_zh": "只读状态",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "单选按钮的值。TS 类型：T type RadioValue = string | number | boolean。详细类型定义",
+      "description_zh": "单选按钮的值。TS 类型：T type RadioValue = string | number | boolean。详细类型定义",
+      "default": "false",
+      "value": "",
+      "type": "String / Number / Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "值变化时触发",
+      "description_zh": "值变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(checked: boolean)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/radio",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/radio",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Radio"
+}

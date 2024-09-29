@@ -1,0 +1,40 @@
+{
+  "name": "TIndexesAnchor",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "index": {
+      "description": "索引字符",
+      "description_zh": "索引字符",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/indexes",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/indexes",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "IndexesAnchor"
+}

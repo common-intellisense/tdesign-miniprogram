@@ -1,0 +1,103 @@
+{
+  "name": "TSteps",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "current": {
+      "description": "当前步骤，即整个步骤条进度。默认根据步骤下标判断步骤的完成状态，当前步骤为进行中，当前步骤之前的步骤为已完成，当前步骤之后的步骤为未开始。如果每个步骤没有设置 value，current 值为步骤长度则表示所有步骤已完成。如果每个步骤设置了自定义 value，则 current = 'FINISH' 表示所有状态完成",
+      "description_zh": "当前步骤，即整个步骤条进度。默认根据步骤下标判断步骤的完成状态，当前步骤为进行中，当前步骤之前的步骤为已完成，当前步骤之后的步骤为未开始。如果每个步骤没有设置 value，current 值为步骤长度则表示所有步骤已完成。如果每个步骤设置了自定义 value，则 current = 'FINISH' 表示所有状态完成",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "default-current": {
+      "description": "当前步骤，即整个步骤条进度。默认根据步骤下标判断步骤的完成状态，当前步骤为进行中，当前步骤之前的步骤为已完成，当前步骤之后的步骤为未开始。如果每个步骤没有设置 value，current 值为步骤长度则表示所有步骤已完成。如果每个步骤设置了自定义 value，则 current = 'FINISH' 表示所有状态完成。非受控属性",
+      "description_zh": "当前步骤，即整个步骤条进度。默认根据步骤下标判断步骤的完成状态，当前步骤为进行中，当前步骤之前的步骤为已完成，当前步骤之后的步骤为未开始。如果每个步骤没有设置 value，current 值为步骤长度则表示所有步骤已完成。如果每个步骤设置了自定义 value，则 current = 'FINISH' 表示所有状态完成。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "current-status": {
+      "description": "用于控制 current 指向的步骤条的状态。可选项：default/process/finish/error",
+      "description_zh": "用于控制 current 指向的步骤条的状态。可选项：default/process/finish/error",
+      "default": "process",
+      "value": "",
+      "type": "default/process/finish/error",
+      "required": false,
+      "version": ""
+    },
+    "layout": {
+      "description": "步骤条方向，有两种：横向和纵向。可选项：horizontal/vertical",
+      "description_zh": "步骤条方向，有两种：横向和纵向。可选项：horizontal/vertical",
+      "default": "horizontal",
+      "value": "",
+      "type": "horizontal/vertical",
+      "required": false,
+      "version": ""
+    },
+    "readonly": {
+      "description": "只读状态",
+      "description_zh": "只读状态",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "sequence": {
+      "description": "步骤条顺序。可选项：positive/reverse",
+      "description_zh": "步骤条顺序。可选项：positive/reverse",
+      "default": "positive",
+      "value": "",
+      "type": "positive/reverse",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "步骤条风格。可选项：default/dot",
+      "description_zh": "步骤条风格。可选项：default/dot",
+      "default": "default",
+      "value": "",
+      "type": "default/dot",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "当前步骤发生变化时触发",
+      "description_zh": "当前步骤发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "({current: string | number, previous: string | number})"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/steps",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/steps",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-step-item"
+  ],
+  "filename": "Steps"
+}

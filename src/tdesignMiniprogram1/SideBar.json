@@ -1,0 +1,65 @@
+{
+  "name": "TSideBar",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选项值",
+      "description_zh": "选项值",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选项值。非受控属性",
+      "description_zh": "选项值。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "选项值发生变化时触发",
+      "description_zh": "选项值发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: number | string, label: string)"
+    },
+    "bindclick": {
+      "description": "点击选项时触发",
+      "description_zh": "点击选项时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: number | string, label: string)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/side-bar",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/side-bar",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-side-bar-item"
+  ],
+  "filename": "SideBar"
+}

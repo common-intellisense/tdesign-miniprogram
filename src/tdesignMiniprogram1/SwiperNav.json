@@ -1,0 +1,94 @@
+{
+  "name": "TSwiperNav",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "current": {
+      "description": "0.34.0。当前轮播在哪一项（下标）",
+      "description_zh": "0.34.0。当前轮播在哪一项（下标）",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "direction": {
+      "description": "0.34.0。轮播滑动方向，包括横向滑动和纵向滑动两个方向。可选项：horizontal/vertical",
+      "description_zh": "0.34.0。轮播滑动方向，包括横向滑动和纵向滑动两个方向。可选项：horizontal/vertical",
+      "default": "horizontal",
+      "value": "",
+      "type": "horizontal/vertical",
+      "required": false,
+      "version": ""
+    },
+    "min-show-num": {
+      "description": "小于这个数字不会显示导航器",
+      "description_zh": "小于这个数字不会显示导航器",
+      "default": "2",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "pagination-position": {
+      "description": "0.34.0。页码信息展示位置。可选项：top-left/top/top-right/bottom-left/bottom/bottom-right",
+      "description_zh": "0.34.0。页码信息展示位置。可选项：top-left/top/top-right/bottom-left/bottom/bottom-right",
+      "default": "bottom",
+      "value": "",
+      "type": "top-left/top/top-right/bottom-left/bottom/bottom-right",
+      "required": false,
+      "version": ""
+    },
+    "show-controls": {
+      "description": "0.32.0。是否显示两侧的控制按钮",
+      "description_zh": "0.32.0。是否显示两侧的控制按钮",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "total": {
+      "description": "0.34.0。总共的项数",
+      "description_zh": "0.34.0。总共的项数",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "type": {
+      "description": "导航器类型，点状(dots)、点条状(dots-bar)、分式(fraction)等。TS 类型：SwiperNavigationType type SwiperNavigationType = 'dots' | 'dots-bar' | 'fraction'。详细类型定义",
+      "description_zh": "导航器类型，点状(dots)、点条状(dots-bar)、分式(fraction)等。TS 类型：SwiperNavigationType type SwiperNavigationType = 'dots' | 'dots-bar' | 'fraction'。详细类型定义",
+      "default": "dots",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/swiper",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/swiper",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "SwiperNav"
+}

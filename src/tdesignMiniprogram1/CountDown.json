@@ -1,0 +1,117 @@
+{
+  "name": "TCountDown",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "auto-start": {
+      "description": "是否自动开始倒计时",
+      "description_zh": "是否自动开始倒计时",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "content": {
+      "description": "最终倒计时的展示内容，值为'default'时使用默认的格式，否则使用自定义样式插槽。通用类型定义",
+      "description_zh": "最终倒计时的展示内容，值为'default'时使用默认的格式，否则使用自定义样式插槽。通用类型定义",
+      "default": "'default'",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "format": {
+      "description": "时间格式，DD-日，HH-时，mm-分，ss-秒，SSS-毫秒",
+      "description_zh": "时间格式，DD-日，HH-时，mm-分，ss-秒，SSS-毫秒",
+      "default": "HH:mm:ss",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "millisecond": {
+      "description": "是否开启毫秒级渲染",
+      "description_zh": "是否开启毫秒级渲染",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "size": {
+      "description": "0.5.1。倒计时尺寸。可选项：small/medium/large",
+      "description_zh": "0.5.1。倒计时尺寸。可选项：small/medium/large",
+      "default": "'medium'",
+      "value": "",
+      "type": "small/medium/large",
+      "required": false,
+      "version": ""
+    },
+    "split-with-unit": {
+      "description": "0.5.1。使用时间单位分割",
+      "description_zh": "0.5.1。使用时间单位分割",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "0.5.1。倒计时风格。可选项：default/round/square",
+      "description_zh": "0.5.1。倒计时风格。可选项：default/round/square",
+      "default": "'default'",
+      "value": "",
+      "type": "default/round/square",
+      "required": false,
+      "version": ""
+    },
+    "time": {
+      "description": "必需。倒计时时长，单位毫秒",
+      "description_zh": "必需。倒计时时长，单位毫秒",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": true,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "时间变化时触发。详细类型定义。interface TimeData {  days: number; hours: number; minutes: number; seconds: number; milliseconds: number }",
+      "description_zh": "时间变化时触发。详细类型定义。interface TimeData {  days: number; hours: number; minutes: number; seconds: number; milliseconds: number }",
+      "default": "",
+      "value": "",
+      "type": "(time: TimeData)"
+    },
+    "bindfinish": {
+      "description": "倒计时结束时触发",
+      "description_zh": "倒计时结束时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/count-down",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/count-down",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "CountDown"
+}

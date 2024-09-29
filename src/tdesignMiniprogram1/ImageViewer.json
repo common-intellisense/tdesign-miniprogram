@@ -1,0 +1,133 @@
+{
+  "name": "TImageViewer",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "background-color": {
+      "description": "遮罩的背景颜色",
+      "description_zh": "遮罩的背景颜色",
+      "default": "'rgba(0, 0, 0, 1)'",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "close-btn": {
+      "description": "是否显示关闭操作，前提需要开启页码。值为字符串表示图标名称，值为 true 表示使用默认图标 close，值为 Object 类型，表示透传至 icon ，不传表示不显示图标。通用类型定义",
+      "description_zh": "是否显示关闭操作，前提需要开启页码。值为字符串表示图标名称，值为 true 表示使用默认图标 close，值为 Object 类型，表示透传至 icon ，不传表示不显示图标。通用类型定义",
+      "default": "false",
+      "value": "",
+      "type": "String / Boolean / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "delete-btn": {
+      "description": "是否显示删除操作，前提需要开启页码。值为字符串表示图标名称，值为 true 表示使用默认图标 delete，值为 Object 类型，表示透传至 icon，不传表示不显示图标。通用类型定义",
+      "description_zh": "是否显示删除操作，前提需要开启页码。值为字符串表示图标名称，值为 true 表示使用默认图标 delete，值为 Object 类型，表示透传至 icon，不传表示不显示图标。通用类型定义",
+      "default": "false",
+      "value": "",
+      "type": "String / Boolean / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "images": {
+      "description": "图片数组。TS 类型：Array<string>",
+      "description_zh": "图片数组。TS 类型：Array<string>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "initial-index": {
+      "description": "初始化页码。TS 类型：Number",
+      "description_zh": "初始化页码。TS 类型：Number",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "show-index": {
+      "description": "是否显示页码",
+      "description_zh": "是否显示页码",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "v1.1.4。是否使用了自定义导航栏",
+      "description_zh": "v1.1.4。是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "隐藏/显示预览",
+      "description_zh": "隐藏/显示预览",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "default-visible": {
+      "description": "隐藏/显示预览。非受控属性",
+      "description_zh": "隐藏/显示预览。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "翻页时回调",
+      "description_zh": "翻页时回调",
+      "default": "",
+      "value": "",
+      "type": "(index: Number)"
+    },
+    "bindclose": {
+      "description": "点击操作按钮button或者overlay时触发",
+      "description_zh": "点击操作按钮button或者overlay时触发",
+      "default": "",
+      "value": "",
+      "type": "(trigger: 'overlay' | 'button', visible: Boolean, index: Number)"
+    },
+    "binddelete": {
+      "description": "点击删除操作按钮时触发",
+      "description_zh": "点击删除操作按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "(index: Number)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/image-viewer",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/image-viewer",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ImageViewer"
+}

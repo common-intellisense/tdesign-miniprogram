@@ -1,0 +1,119 @@
+{
+  "name": "TGridItem",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "badge-props": {
+      "description": "透传至 Badge 属性。TS 类型：BadgeProps，Badge API Documents。详细类型定义",
+      "description_zh": "透传至 Badge 属性。TS 类型：BadgeProps，Badge API Documents。详细类型定义",
+      "default": "null",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "description": {
+      "description": "文本以外的更多描述，辅助信息。可以通过 Props 传入文本，也可以自定义标题节点。通用类型定义",
+      "description_zh": "文本以外的更多描述，辅助信息。可以通过 Props 传入文本，也可以自定义标题节点。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "图标名称。值为字符串表示图标名称，值为 Object 类型，表示透传至 icon",
+      "description_zh": "图标名称。值为字符串表示图标名称，值为 Object 类型，表示透传至 icon",
+      "default": "-",
+      "value": "",
+      "type": "String / Object",
+      "required": false,
+      "version": ""
+    },
+    "image": {
+      "description": "图片，可以是图片地址，也可以自定义图片节点，值为 slot 的时候才能使用插槽。通用类型定义",
+      "description_zh": "图片，可以是图片地址，也可以自定义图片节点，值为 slot 的时候才能使用插槽。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "image-props": {
+      "description": "透传至 Image 组件。TS 类型：ImageProps，Image API Documents。详细类型定义",
+      "description_zh": "透传至 Image 组件。TS 类型：ImageProps，Image API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "jump-type": {
+      "description": "链接跳转类型。可选项：redirect-to/switch-tab/relaunch/navigate-to",
+      "description_zh": "链接跳转类型。可选项：redirect-to/switch-tab/relaunch/navigate-to",
+      "default": "navigate-to",
+      "value": "",
+      "type": "redirect-to/switch-tab/relaunch/navigate-to",
+      "required": false,
+      "version": ""
+    },
+    "layout": {
+      "description": "内容布局方式。可选项：vertical/horizontal",
+      "description_zh": "内容布局方式。可选项：vertical/horizontal",
+      "default": "vertical",
+      "value": "",
+      "type": "vertical/horizontal",
+      "required": false,
+      "version": ""
+    },
+    "text": {
+      "description": "文本，可以通过 Props 传入文本，也可以自定义标题节点。通用类型定义",
+      "description_zh": "文本，可以通过 Props 传入文本，也可以自定义标题节点。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "url": {
+      "description": "点击后的跳转链接",
+      "description_zh": "点击后的跳转链接",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "bindclick": {
+      "description": "点击子项后触发。通用类型定义",
+      "description_zh": "点击子项后触发。通用类型定义",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/grid",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/grid",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "GridItem"
+}

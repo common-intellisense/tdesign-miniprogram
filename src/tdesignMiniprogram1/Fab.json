@@ -1,0 +1,92 @@
+{
+  "name": "TFab",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "button-props": {
+      "description": "透传至 Button 组件。TS 类型：ButtonProps，Button API Documents。详细类型定义",
+      "description_zh": "透传至 Button 组件。TS 类型：ButtonProps，Button API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "draggable": {
+      "description": "是否可拖拽。true / 'all'可拖动'vertical'可垂直拖动'horizontal'可水平拖动false禁止拖动。TS 类型：boolean | FabDirectionEnum  type FabDirectionEnum = 'all' | 'vertical' | 'horizontal'。详细类型定义",
+      "description_zh": "是否可拖拽。true / 'all'可拖动'vertical'可垂直拖动'horizontal'可水平拖动false禁止拖动。TS 类型：boolean | FabDirectionEnum  type FabDirectionEnum = 'all' | 'vertical' | 'horizontal'。详细类型定义",
+      "default": "false",
+      "value": "",
+      "type": "String / Boolean",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "图标",
+      "description_zh": "图标",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "text": {
+      "description": "文本内容",
+      "description_zh": "文本内容",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "y-bounds": {
+      "description": "设置垂直方向边界限制，示例：[48, 48] 或 ['96rpx', 80]。TS 类型：Array<string | number>",
+      "description_zh": "设置垂直方向边界限制，示例：[48, 48] 或 ['96rpx', 80]。TS 类型：Array<string | number>",
+      "default": "-",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "bindclick": {
+      "description": "悬浮按钮点击事件",
+      "description_zh": "悬浮按钮点击事件",
+      "default": "",
+      "value": "",
+      "type": "({e: Event})"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/fab",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/fab",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Fab"
+}

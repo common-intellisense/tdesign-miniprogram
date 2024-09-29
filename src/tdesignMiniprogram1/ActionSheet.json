@@ -1,0 +1,160 @@
+{
+  "name": "TActionSheet",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "align": {
+      "description": "0.29.0。水平对齐方式。可选项：center/left",
+      "description_zh": "0.29.0。水平对齐方式。可选项：center/left",
+      "default": "center",
+      "value": "",
+      "type": "center/left",
+      "required": false,
+      "version": ""
+    },
+    "cancel-text": {
+      "description": "设置取消按钮的文本",
+      "description_zh": "设置取消按钮的文本",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "count": {
+      "description": "设置每页展示菜单的数量，仅当 type=grid 时有效",
+      "description_zh": "设置每页展示菜单的数量，仅当 type=grid 时有效",
+      "default": "8",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "description": {
+      "description": "0.29.0。动作面板描述文字",
+      "description_zh": "0.29.0。动作面板描述文字",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "items": {
+      "description": "必需。菜单项。TS 类型：Array<string | ActionSheetItem> interface ActionSheetItem {label: string; color?: string; disabled?: boolean;icon?: string;suffixIcon?: string; }。详细类型定义",
+      "description_zh": "必需。菜单项。TS 类型：Array<string | ActionSheetItem> interface ActionSheetItem {label: string; color?: string; disabled?: boolean;icon?: string;suffixIcon?: string; }。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Array",
+      "required": true,
+      "version": ""
+    },
+    "popup-props": {
+      "description": "popupProps透传。TS 类型：PopupProps，Popup API Documents。详细类型定义",
+      "description_zh": "popupProps透传。TS 类型：PopupProps，Popup API Documents。详细类型定义",
+      "default": "{}",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "show-cancel": {
+      "description": "是否显示取消按钮",
+      "description_zh": "是否显示取消按钮",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "show-overlay": {
+      "description": "是否显示遮罩层",
+      "description_zh": "是否显示遮罩层",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "展示类型，列表和表格形式展示。可选项：list/grid",
+      "description_zh": "展示类型，列表和表格形式展示。可选项：list/grid",
+      "default": "list",
+      "value": "",
+      "type": "list/grid",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "必需。显示与隐藏",
+      "description_zh": "必需。显示与隐藏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": true,
+      "version": ""
+    },
+    "default-visible": {
+      "description": "必需。显示与隐藏。非受控属性",
+      "description_zh": "必需。显示与隐藏。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": true,
+      "version": ""
+    },
+    "bindcancel": {
+      "description": "点击取消按钮时触发",
+      "description_zh": "点击取消按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindclose": {
+      "description": "关闭时触发。详细类型定义。type TriggerSource = 'overlay' | 'command' | 'select' ",
+      "description_zh": "关闭时触发。详细类型定义。type TriggerSource = 'overlay' | 'command' | 'select' ",
+      "default": "",
+      "value": "",
+      "type": "(trigger: TriggerSource)"
+    },
+    "bindselected": {
+      "description": "选择菜单项时触发",
+      "description_zh": "选择菜单项时触发",
+      "default": "",
+      "value": "",
+      "type": "(selected: ActionSheetItem | string, index: number)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/action-sheet",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/action-sheet",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "ActionSheet"
+}

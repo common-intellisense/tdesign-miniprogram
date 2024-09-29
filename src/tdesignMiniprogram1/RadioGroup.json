@@ -1,0 +1,130 @@
+{
+  "name": "TRadioGroup",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "allow-uncheck": {
+      "description": "是否允许取消选中",
+      "description_zh": "是否允许取消选中",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "borderless": {
+      "description": "是否开启无边框模式",
+      "description_zh": "是否开启无边框模式",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用全部子单选框",
+      "description_zh": "是否禁用全部子单选框",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "自定义选中图标和非选中图标。示例：[选中态图标，非选中态图标]。使用 String 时，值为 circle 表示填充型图标、值为 line 表示描边型图标、值为 dot 表示圆点图标；仅在使用 options 时生效。TS 类型：'circle' | 'line' | 'dot' | Array<string>",
+      "description_zh": "自定义选中图标和非选中图标。示例：[选中态图标，非选中态图标]。使用 String 时，值为 circle 表示填充型图标、值为 line 表示描边型图标、值为 dot 表示圆点图标；仅在使用 options 时生效。TS 类型：'circle' | 'line' | 'dot' | Array<string>",
+      "default": "'circle'",
+      "value": "",
+      "type": "String / Array",
+      "required": false,
+      "version": ""
+    },
+    "keys": {
+      "description": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "description_zh": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "name": {
+      "description": "HTML 元素原生属性",
+      "description_zh": "HTML 元素原生属性",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "options": {
+      "description": "单选组件按钮形式。RadioOption 数据类型为 string 或 number 时，表示 label 和 value 值相同。TS 类型：Array<RadioOption> type RadioOption = string | number | RadioOptionObj interface RadioOptionObj { label?: string; value?: string | number; readonly?: boolean; disabled?: boolean; allowUncheck?: boolean; }。详细类型定义",
+      "description_zh": "单选组件按钮形式。RadioOption 数据类型为 string 或 number 时，表示 label 和 value 值相同。TS 类型：Array<RadioOption> type RadioOption = string | number | RadioOptionObj interface RadioOptionObj { label?: string; value?: string | number; readonly?: boolean; disabled?: boolean; allowUncheck?: boolean; }。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "placement": {
+      "description": "复选框和内容相对位置。可选项：left/right",
+      "description_zh": "复选框和内容相对位置。可选项：left/right",
+      "default": "left",
+      "value": "",
+      "type": "left/right",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选中的值。TS 类型：T type RadioValue = string | number | boolean。详细类型定义",
+      "description_zh": "选中的值。TS 类型：T type RadioValue = string | number | boolean。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Number / Boolean",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选中的值。非受控属性。TS 类型：T type RadioValue = string | number | boolean。详细类型定义",
+      "description_zh": "选中的值。非受控属性。TS 类型：T type RadioValue = string | number | boolean。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number / Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "选中值发生变化时触发",
+      "description_zh": "选中值发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: RadioValue)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/radio",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/radio",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-radio"
+  ],
+  "filename": "RadioGroup"
+}

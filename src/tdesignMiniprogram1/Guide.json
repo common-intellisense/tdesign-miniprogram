@@ -1,0 +1,183 @@
+{
+  "name": "TGuide",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "back-button-props": {
+      "description": "透传 返回 的全部属性，示例：{ content: '返回', theme: 'default' }。TS 类型：ButtonProps",
+      "description_zh": "透传 返回 的全部属性，示例：{ content: '返回', theme: 'default' }。TS 类型：ButtonProps",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "current": {
+      "description": "当前步骤，即整个引导的进度。-1 则不展示，用于需要中断展示的场景",
+      "description_zh": "当前步骤，即整个引导的进度。-1 则不展示，用于需要中断展示的场景",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "finish-button-props": {
+      "description": "透传 完成 的全部属性，示例：{ content: '完成', theme: 'primary' }。TS 类型：ButtonProps",
+      "description_zh": "透传 完成 的全部属性，示例：{ content: '完成', theme: 'primary' }。TS 类型：ButtonProps",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "hide-counter": {
+      "description": "是否隐藏计数",
+      "description_zh": "是否隐藏计数",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "hide-skip": {
+      "description": "是否隐藏跳过按钮",
+      "description_zh": "是否隐藏跳过按钮",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "highlight-padding": {
+      "description": "高亮框的内边距，单位rpx",
+      "description_zh": "高亮框的内边距，单位rpx",
+      "default": "16",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "mode": {
+      "description": "引导框的类型。可选项：popover/dialog",
+      "description_zh": "引导框的类型。可选项：popover/dialog",
+      "default": "popover",
+      "value": "",
+      "type": "popover/dialog",
+      "required": false,
+      "version": ""
+    },
+    "next-button-props": {
+      "description": "透传 下一步按钮 的全部属性，示例：{ content: '下一步', theme: 'primary' }。TS 类型：ButtonProps，Button API Documents。详细类型定义",
+      "description_zh": "透传 下一步按钮 的全部属性，示例：{ content: '下一步', theme: 'primary' }。TS 类型：ButtonProps，Button API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "show-overlay": {
+      "description": "是否出现遮罩层",
+      "description_zh": "是否出现遮罩层",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "skip-button-props": {
+      "description": "透传 跳过按钮 的全部属性，{ content: '跳过', theme: 'default' }。TS 类型：ButtonProps",
+      "description_zh": "透传 跳过按钮 的全部属性，{ content: '跳过', theme: 'default' }。TS 类型：ButtonProps",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "steps": {
+      "description": "用于定义每个步骤的内容，包括高亮的节点、相对位置和具体的文案内容等。。TS 类型：Array<GuideStep>",
+      "description_zh": "用于定义每个步骤的内容，包括高亮的节点、相对位置和具体的文案内容等。。TS 类型：Array<GuideStep>",
+      "default": "-",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "z-index": {
+      "description": "提示框的层级",
+      "description_zh": "提示框的层级",
+      "default": "999999",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindback": {
+      "description": "点击返回按钮时触发",
+      "description_zh": "点击返回按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "(detail: { current: number, total: number  })"
+    },
+    "bindchange": {
+      "description": "当前步骤发生变化时触发",
+      "description_zh": "当前步骤发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(current: number, context?: {  total: number })"
+    },
+    "bindfinish": {
+      "description": "点击完成按钮时触发",
+      "description_zh": "点击完成按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "(detail: { current: number, total: number  })"
+    },
+    "bindnext-step-click": {
+      "description": "点击下一步时触发",
+      "description_zh": "点击下一步时触发",
+      "default": "",
+      "value": "",
+      "type": "(detail: { next: number, current: number, total: number  })"
+    },
+    "bindskip": {
+      "description": "点击跳过按钮时触发",
+      "description_zh": "点击跳过按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "(detail: { current: number, total: number  })"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/guide",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/guide",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Guide"
+}

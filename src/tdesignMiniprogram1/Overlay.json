@@ -1,0 +1,92 @@
+{
+  "name": "TOverlay",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "background-color": {
+      "description": "遮罩层的背景色",
+      "description_zh": "遮罩层的背景色",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "duration": {
+      "description": "背景色过渡时间，单位毫秒",
+      "description_zh": "背景色过渡时间，单位毫秒",
+      "default": "300",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "prevent-scroll-through": {
+      "description": "防止滚动穿透，即不允许点击和滚动",
+      "description_zh": "防止滚动穿透，即不允许点击和滚动",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "是否展示",
+      "description_zh": "是否展示",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "z-index": {
+      "description": "遮罩层级",
+      "description_zh": "遮罩层级",
+      "default": "11000",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindclick": {
+      "description": "点击遮罩时触发",
+      "description_zh": "点击遮罩时触发",
+      "default": "",
+      "value": "",
+      "type": "({ visible: boolean })"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/overlay",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/overlay",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Overlay"
+}

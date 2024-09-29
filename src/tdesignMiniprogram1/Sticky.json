@@ -1,0 +1,74 @@
+{
+  "name": "TSticky",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "container": {
+      "description": "函数返回容器对应的 NodesRef 节点，将对应节点指定为组件的外部容器，滚动时组件会始终保持在容器范围内，当组件即将超出容器底部时，会返回原位置。",
+      "description_zh": "函数返回容器对应的 NodesRef 节点，将对应节点指定为组件的外部容器，滚动时组件会始终保持在容器范围内，当组件即将超出容器底部时，会返回原位置。",
+      "default": "-",
+      "value": "",
+      "type": "Function",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用组件",
+      "description_zh": "是否禁用组件",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "offset-top": {
+      "description": "吸顶时与顶部的距离，单位px",
+      "description_zh": "吸顶时与顶部的距离，单位px",
+      "default": "0",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "z-index": {
+      "description": "吸顶时的 z-index",
+      "description_zh": "吸顶时的 z-index",
+      "default": "99",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindscroll": {
+      "description": "滚动时触发，scrollTop: 距离顶部位置，isFixed: 是否吸顶。通用类型定义",
+      "description_zh": "滚动时触发，scrollTop: 距离顶部位置，isFixed: 是否吸顶。通用类型定义",
+      "default": "",
+      "value": "",
+      "type": "(detail: { scrollTop: number, isFixed: boolean })"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/sticky",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/sticky",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Sticky"
+}

@@ -1,0 +1,149 @@
+{
+  "name": "TDropdownItem",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用操作项",
+      "description_zh": "是否禁用操作项",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "footer": {
+      "description": "底部。通用类型定义",
+      "description_zh": "底部。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Slot",
+      "required": false,
+      "version": ""
+    },
+    "keys": {
+      "description": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "description_zh": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "标题",
+      "description_zh": "标题",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "multiple": {
+      "description": "是否多选",
+      "description_zh": "是否多选",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "options": {
+      "description": "选项数据。TS 类型：Array<DropdownOption> interface DropdownOption { label: string; disabled: boolean; value: DropdownValue; }。详细类型定义",
+      "description_zh": "选项数据。TS 类型：Array<DropdownOption> interface DropdownOption { label: string; disabled: boolean; value: DropdownValue; }。详细类型定义",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "options-columns": {
+      "description": "选项分栏（1-3）",
+      "description_zh": "选项分栏（1-3）",
+      "default": "1",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "options-layout": {
+      "description": "已废弃。选项排列；不再支持 tree 布局，可与 treeSelect 配合使用",
+      "description_zh": "已废弃。选项排列；不再支持 tree 布局，可与 treeSelect 配合使用",
+      "default": "columns",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选中值。TS 类型：DropdownValue  type DropdownValue = string | number | Array<DropdownValue>;。详细类型定义",
+      "description_zh": "选中值。TS 类型：DropdownValue  type DropdownValue = string | number | Array<DropdownValue>;。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选中值。非受控属性。TS 类型：DropdownValue  type DropdownValue = string | number | Array<DropdownValue>;。详细类型定义",
+      "description_zh": "选中值。非受控属性。TS 类型：DropdownValue  type DropdownValue = string | number | Array<DropdownValue>;。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "值改变时触发",
+      "description_zh": "值改变时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: DropdownValue)"
+    },
+    "bindclose": {
+      "description": "关闭时触发",
+      "description_zh": "关闭时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindconfirm": {
+      "description": "点击确认时触发",
+      "description_zh": "点击确认时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: DropdownValue)"
+    },
+    "bindreset": {
+      "description": "点击重置时触发",
+      "description_zh": "点击重置时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/dropdown-menu",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/dropdown-menu",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "DropdownItem"
+}

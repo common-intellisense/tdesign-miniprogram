@@ -1,0 +1,92 @@
+{
+  "name": "TDropdownMenu",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "arrow-icon": {
+      "description": "自定义箭头图标",
+      "description_zh": "自定义箭头图标",
+      "default": "'caret-down-small'",
+      "value": "",
+      "type": "String / Object",
+      "required": false,
+      "version": ""
+    },
+    "close-on-click-overlay": {
+      "description": "是否在点击遮罩层后关闭菜单",
+      "description_zh": "是否在点击遮罩层后关闭菜单",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "duration": {
+      "description": "动画时长",
+      "description_zh": "动画时长",
+      "default": "200",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "show-overlay": {
+      "description": "是否显示遮罩层",
+      "description_zh": "是否显示遮罩层",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "z-index": {
+      "description": "菜单栏 z-index 层级",
+      "description_zh": "菜单栏 z-index 层级",
+      "default": "11600",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindclose": {
+      "description": "菜单关闭时触发",
+      "description_zh": "菜单关闭时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindopen": {
+      "description": "菜单展开时触发",
+      "description_zh": "菜单展开时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/dropdown-menu",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/dropdown-menu",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-dropdown-item"
+  ],
+  "filename": "DropdownMenu"
+}

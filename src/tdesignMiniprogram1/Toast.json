@@ -1,0 +1,135 @@
+{
+  "name": "TToast",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "direction": {
+      "description": "图标排列方式。可选项：row/column",
+      "description_zh": "图标排列方式。可选项：row/column",
+      "default": "row",
+      "value": "",
+      "type": "row/column",
+      "required": false,
+      "version": ""
+    },
+    "duration": {
+      "description": "弹窗显示毫秒数",
+      "description_zh": "弹窗显示毫秒数",
+      "default": "2000",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "自定义图标。传入对象则透传至 Icon 组件。通用类型定义",
+      "description_zh": "自定义图标。传入对象则透传至 Icon 组件。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "message": {
+      "description": "弹窗显示文字。通用类型定义",
+      "description_zh": "弹窗显示文字。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "overlay-props": {
+      "description": "遮罩层属性，透传至 Overlay。TS 类型：OverlayProps ，Overlay API Documents。详细类型定义",
+      "description_zh": "遮罩层属性，透传至 Overlay。TS 类型：OverlayProps ，Overlay API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "placement": {
+      "description": "弹窗展示位置。可选项： top/middle/bottom",
+      "description_zh": "弹窗展示位置。可选项： top/middle/bottom",
+      "default": "middle",
+      "value": "",
+      "type": "top/middle/bottom",
+      "required": false,
+      "version": ""
+    },
+    "prevent-scroll-through": {
+      "description": "防止滚动穿透，即不允许点击和滚动",
+      "description_zh": "防止滚动穿透，即不允许点击和滚动",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "show-overlay": {
+      "description": "是否显示遮罩层",
+      "description_zh": "是否显示遮罩层",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "提示类型。可选项：loading/success/error",
+      "description_zh": "提示类型。可选项：loading/success/error",
+      "default": "-",
+      "value": "",
+      "type": "loading/success/error",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindclose": {
+      "description": "轻提示隐藏的时候触发",
+      "description_zh": "轻提示隐藏的时候触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "binddestroy": {
+      "description": "轻提示销毁的时候触发",
+      "description_zh": "轻提示销毁的时候触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/toast",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/toast",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Toast"
+}

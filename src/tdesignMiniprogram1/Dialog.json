@@ -1,0 +1,185 @@
+{
+  "name": "TDialog",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "actions": {
+      "description": "操作栏。TS 类型：Array<ButtonProps>，Button API Documents。详细类型定义",
+      "description_zh": "操作栏。TS 类型：Array<ButtonProps>，Button API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Array / Slot",
+      "required": false,
+      "version": ""
+    },
+    "button-layout": {
+      "description": "多按钮排列方式。可选项：horizontal/vertical",
+      "description_zh": "多按钮排列方式。可选项：horizontal/vertical",
+      "default": "horizontal",
+      "value": "",
+      "type": "horizontal/vertical",
+      "required": false,
+      "version": ""
+    },
+    "cancel-btn": {
+      "description": "取消按钮，可自定义。值为 null 则不显示取消按钮。值类型为字符串，则表示自定义按钮文本，值类型为 Object 则表示透传 Button 组件属性。使用 Slot 自定义按钮时，需自行控制取消事件。通用类型定义。详细类型定义",
+      "description_zh": "取消按钮，可自定义。值为 null 则不显示取消按钮。值类型为字符串，则表示自定义按钮文本，值类型为 Object 则表示透传 Button 组件属性。使用 Slot 自定义按钮时，需自行控制取消事件。通用类型定义。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "close-btn": {
+      "description": "0.31.0。是否展示关闭按钮，值为 true 显示默认关闭按钮；值为 false 则不显示关闭按钮；使用 Object 时透传至图标组件。通用类型定义。详细类型定义",
+      "description_zh": "0.31.0。是否展示关闭按钮，值为 true 显示默认关闭按钮；值为 false 则不显示关闭按钮；使用 Object 时透传至图标组件。通用类型定义。详细类型定义",
+      "default": "false",
+      "value": "",
+      "type": "Boolean / Object",
+      "required": false,
+      "version": ""
+    },
+    "close-on-overlay-click": {
+      "description": "点击蒙层时是否触发关闭事件",
+      "description_zh": "点击蒙层时是否触发关闭事件",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "confirm-btn": {
+      "description": "确认按钮。值为 null 则不显示确认按钮。值类型为字符串，则表示自定义按钮文本，值类型为 Object 则表示透传 Button 组件属性。使用 Slot 自定义按钮时，需自行控制确认事件。通用类型定义",
+      "description_zh": "确认按钮。值为 null 则不显示确认按钮。值类型为字符串，则表示自定义按钮文本，值类型为 Object 则表示透传 Button 组件属性。使用 Slot 自定义按钮时，需自行控制确认事件。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "content": {
+      "description": "内容。通用类型定义",
+      "description_zh": "内容。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "overlay-props": {
+      "description": "透传至 Overlay 组件。TS 类型：OverlayProps，Overlay API Documents。详细类型定义",
+      "description_zh": "透传至 Overlay 组件。TS 类型：OverlayProps，Overlay API Documents。详细类型定义",
+      "default": "{}",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "prevent-scroll-through": {
+      "description": "防止滚动穿透",
+      "description_zh": "防止滚动穿透",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "show-overlay": {
+      "description": "是否显示遮罩层",
+      "description_zh": "是否显示遮罩层",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "title": {
+      "description": "标题。通用类型定义",
+      "description_zh": "标题。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "控制对话框是否显示",
+      "description_zh": "控制对话框是否显示",
+      "default": "-",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "z-index": {
+      "description": "对话框层级，Web 侧样式默认为 2500，移动端样式默认 2500，小程序样式默认为 11500",
+      "description_zh": "对话框层级，Web 侧样式默认为 2500，移动端样式默认 2500，小程序样式默认为 11500",
+      "default": "11500",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindcancel": {
+      "description": "如果“取消”按钮存在，则点击“取消”按钮时触发，同时触发关闭事件",
+      "description_zh": "如果“取消”按钮存在，则点击“取消”按钮时触发，同时触发关闭事件",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindclose": {
+      "description": "关闭事件，点击 取消按钮 或 点击蒙层 时触发。详细类型定义。type DialogEventSource = 'cancel' | 'overlay' | 'close-btn'",
+      "description_zh": "关闭事件，点击 取消按钮 或 点击蒙层 时触发。详细类型定义。type DialogEventSource = 'cancel' | 'overlay' | 'close-btn'",
+      "default": "",
+      "value": "",
+      "type": "(trigger: DialogEventSource)"
+    },
+    "bindconfirm": {
+      "description": "如果“确认”按钮存在，则点击“确认”按钮时触发",
+      "description_zh": "如果“确认”按钮存在，则点击“确认”按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindoverlay-click": {
+      "description": "如果蒙层存在，点击蒙层时触发",
+      "description_zh": "如果蒙层存在，点击蒙层时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/dialog",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/dialog",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Dialog"
+}

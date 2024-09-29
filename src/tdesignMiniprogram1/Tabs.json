@@ -1,0 +1,153 @@
+{
+  "name": "TTabs",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "animation": {
+      "description": "动画效果设置。其中 duration 表示动画时长。（单位：秒）。TS 类型：TabAnimation type TabAnimation = { duration: number } & Record<string, any>。详细类型定义",
+      "description_zh": "动画效果设置。其中 duration 表示动画时长。（单位：秒）。TS 类型：TabAnimation type TabAnimation = { duration: number } & Record<string, any>。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "middle": {
+      "description": "中间内容，介于头部和内容之间。通用类型定义",
+      "description_zh": "中间内容，介于头部和内容之间。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Slot",
+      "required": false,
+      "version": ""
+    },
+    "show-bottom-line": {
+      "description": "是否展示底部激活线条",
+      "description_zh": "是否展示底部激活线条",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "space-evenly": {
+      "description": "选项卡头部空间是否均分",
+      "description_zh": "选项卡头部空间是否均分",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "split": {
+      "description": "1.1.10。是否展示分割线",
+      "description_zh": "1.1.10。是否展示分割线",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "sticky": {
+      "description": "是否开启粘性布局",
+      "description_zh": "是否开启粘性布局",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "sticky-props": {
+      "description": "透传至 Sticky 组件。TS 类型：StickyProps，Sticky API Documents。详细类型定义",
+      "description_zh": "透传至 Sticky 组件。TS 类型：StickyProps，Sticky API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "swipeable": {
+      "description": "是否可以滑动切换",
+      "description_zh": "是否可以滑动切换",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "标签的样式。可选项：line/tag/card",
+      "description_zh": "标签的样式。可选项：line/tag/card",
+      "default": "line",
+      "value": "",
+      "type": "line/tag/card",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "激活的选项卡值。TS 类型：TabValue type TabValue = string | number。详细类型定义",
+      "description_zh": "激活的选项卡值。TS 类型：TabValue type TabValue = string | number。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "激活的选项卡值。非受控属性。TS 类型：TabValue type TabValue = string | number。详细类型定义",
+      "description_zh": "激活的选项卡值。非受控属性。TS 类型：TabValue type TabValue = string | number。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "激活的选项卡发生变化时触发",
+      "description_zh": "激活的选项卡发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TabValue, label: string)"
+    },
+    "bindclick": {
+      "description": "点击选项卡时触发",
+      "description_zh": "点击选项卡时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TabValue, label: string)"
+    },
+    "bindscroll": {
+      "description": "页面滚动时触发",
+      "description_zh": "页面滚动时触发",
+      "default": "",
+      "value": "",
+      "type": "(scrollTop: number, isFixed: boolean)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/tabs",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/tabs",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-tab-panel"
+  ],
+  "filename": "Tabs"
+}

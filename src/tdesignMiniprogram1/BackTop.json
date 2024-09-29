@@ -1,0 +1,92 @@
+{
+  "name": "TBackTop",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "fixed": {
+      "description": "是否绝对定位固定到屏幕右下方",
+      "description_zh": "是否绝对定位固定到屏幕右下方",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "图标。值为 false 表示不显示图标。不传表示使用默认图标 'backtop'。通用类型定义",
+      "description_zh": "图标。值为 false 表示不显示图标。不传表示使用默认图标 'backtop'。通用类型定义",
+      "default": "true",
+      "value": "",
+      "type": "String / Boolean / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "scroll-top": {
+      "description": "页面滚动距离",
+      "description_zh": "页面滚动距离",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "text": {
+      "description": "文案",
+      "description_zh": "文案",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "预设的样式类型。可选项：round/half-round/round-dark/half-round-dark",
+      "description_zh": "预设的样式类型。可选项：round/half-round/round-dark/half-round-dark",
+      "default": "round",
+      "value": "",
+      "type": "round/half-round/round-dark/half-round-dark",
+      "required": false,
+      "version": ""
+    },
+    "visibility-height": {
+      "description": "滚动高度达到此参数值才出现",
+      "description_zh": "滚动高度达到此参数值才出现",
+      "default": "200",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindto-top": {
+      "description": "点击触发",
+      "description_zh": "点击触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/back-top",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/back-top",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "BackTop"
+}

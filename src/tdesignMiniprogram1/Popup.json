@@ -1,0 +1,146 @@
+{
+  "name": "TPopup",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "close-btn": {
+      "description": "关闭按钮，值类型为 Boolean 时表示是否显示关闭按钮。也可以自定义关闭按钮。通用类型定义",
+      "description_zh": "关闭按钮，值类型为 Boolean 时表示是否显示关闭按钮。也可以自定义关闭按钮。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Boolean / Slot",
+      "required": false,
+      "version": ""
+    },
+    "close-on-overlay-click": {
+      "description": "点击遮罩层是否关闭",
+      "description_zh": "点击遮罩层是否关闭",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "content": {
+      "description": "浮层里面的内容。通用类型定义",
+      "description_zh": "浮层里面的内容。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "duration": {
+      "description": "动画过渡时间",
+      "description_zh": "动画过渡时间",
+      "default": "240",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "overlay-props": {
+      "description": "遮罩层的属性，透传至 overlay。TS 类型：OverlayProps，Overlay API Documents。详细类型定义",
+      "description_zh": "遮罩层的属性，透传至 overlay。TS 类型：OverlayProps，Overlay API Documents。详细类型定义",
+      "default": "{}",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "placement": {
+      "description": "浮层出现位置。可选项：top/left/right/bottom/center",
+      "description_zh": "浮层出现位置。可选项：top/left/right/bottom/center",
+      "default": "top",
+      "value": "",
+      "type": "top/left/right/bottom/center",
+      "required": false,
+      "version": ""
+    },
+    "prevent-scroll-through": {
+      "description": "是否阻止背景滚动",
+      "description_zh": "是否阻止背景滚动",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "show-overlay": {
+      "description": "是否显示遮罩层",
+      "description_zh": "是否显示遮罩层",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "是否显示浮层。TS 类型：boolean",
+      "description_zh": "是否显示浮层。TS 类型：boolean",
+      "default": "-",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "default-visible": {
+      "description": "是否显示浮层。非受控属性。TS 类型：boolean",
+      "description_zh": "是否显示浮层。非受控属性。TS 类型：boolean",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "z-index": {
+      "description": "组件层级，Web 侧样式默认为 5500，移动端样式默认为 1500，小程序样式默认为11500",
+      "description_zh": "组件层级，Web 侧样式默认为 5500，移动端样式默认为 1500，小程序样式默认为11500",
+      "default": "11500",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindvisible-change": {
+      "description": "当浮层隐藏或显示时触发。详细类型定义。type PopupSource = 'close-btn' | 'overlay'",
+      "description_zh": "当浮层隐藏或显示时触发。详细类型定义。type PopupSource = 'close-btn' | 'overlay'",
+      "default": "",
+      "value": "",
+      "type": "(visible: boolean, trigger: PopupSource) "
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/popup",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/popup",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Popup"
+}

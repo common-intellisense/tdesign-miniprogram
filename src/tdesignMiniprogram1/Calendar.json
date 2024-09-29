@@ -1,0 +1,183 @@
+{
+  "name": "TCalendar",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "auto-close": {
+      "description": "0.34.0。自动关闭；在点击关闭按钮、确认按钮、遮罩层时自动关闭，不需要手动设置 visible",
+      "description_zh": "0.34.0。自动关闭；在点击关闭按钮、确认按钮、遮罩层时自动关闭，不需要手动设置 visible",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "confirm-btn": {
+      "description": "确认按钮。值为 null 则不显示确认按钮。值类型为字符串，则表示自定义按钮文本，值类型为 Object 则表示透传 Button 组件属性。通用类型定义。详细类型定义",
+      "description_zh": "确认按钮。值为 null 则不显示确认按钮。值类型为字符串，则表示自定义按钮文本，值类型为 Object 则表示透传 Button 组件属性。通用类型定义。详细类型定义",
+      "default": "''",
+      "value": "",
+      "type": "String / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "first-day-of-week": {
+      "description": "第一天从星期几开始，默认 0 = 周日",
+      "description_zh": "第一天从星期几开始，默认 0 = 周日",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "format": {
+      "description": "用于格式化日期的函数。TS 类型：CalendarFormatType  type CalendarFormatType = (day: TDate) => TDate type TDateType = 'selected' | 'disabled' | 'start' | 'centre' | 'end' | '' interface TDate { date: Date; day: number; type: TDateType; className?: string; prefix?: string; suffix?: string;}。详细类型定义",
+      "description_zh": "用于格式化日期的函数。TS 类型：CalendarFormatType  type CalendarFormatType = (day: TDate) => TDate type TDateType = 'selected' | 'disabled' | 'start' | 'centre' | 'end' | '' interface TDate { date: Date; day: number; type: TDateType; className?: string; prefix?: string; suffix?: string;}。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Function",
+      "required": false,
+      "version": ""
+    },
+    "max-date": {
+      "description": "最大可选的日期，不传则默认半年后",
+      "description_zh": "最大可选的日期，不传则默认半年后",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "min-date": {
+      "description": "最小可选的日期，不传则默认今天",
+      "description_zh": "最小可选的日期，不传则默认今天",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "title": {
+      "description": "标题。通用类型定义",
+      "description_zh": "标题。通用类型定义",
+      "default": "'请选择日期'",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "type": {
+      "description": "日历的选择类型，single = 单选；multiple = 多选; range = 区间选择。可选项：single/multiple/range",
+      "description_zh": "日历的选择类型，single = 单选；multiple = 多选; range = 区间选择。可选项：single/multiple/range",
+      "default": "'single'",
+      "value": "",
+      "type": "single/multiple/range",
+      "required": false,
+      "version": ""
+    },
+    "use-popup": {
+      "description": "0.32.0。是否使用弹出层包裹日历",
+      "description_zh": "0.32.0。是否使用弹出层包裹日历",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "using-custom-navbar": {
+      "description": "是否使用了自定义导航栏",
+      "description_zh": "是否使用了自定义导航栏",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "当前选择的日期，不传则默认今天，当 type = multiple 或 range 时传入数组。TS 类型：number | number[]",
+      "description_zh": "当前选择的日期，不传则默认今天，当 type = multiple 或 range 时传入数组。TS 类型：number | number[]",
+      "default": "-",
+      "value": "",
+      "type": "Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "当前选择的日期，不传则默认今天，当 type = multiple 或 range 时传入数组。非受控属性。TS 类型：number | number[]",
+      "description_zh": "当前选择的日期，不传则默认今天，当 type = multiple 或 range 时传入数组。非受控属性。TS 类型：number | number[]",
+      "default": "undefined",
+      "value": "",
+      "type": "Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "是否显示日历；usePopup 为 true 时有效",
+      "description_zh": "是否显示日历；usePopup 为 true 时有效",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "0.28.0。不显示 confirm-btn 时，完成选择时触发（暂不支持 type = multiple）",
+      "description_zh": "0.28.0。不显示 confirm-btn 时，完成选择时触发（暂不支持 type = multiple）",
+      "default": "",
+      "value": "",
+      "type": "(value: timestamp)"
+    },
+    "bindclose": {
+      "description": "0.34.0。关闭按钮时触发。详细类型定义。type CalendarTrigger = 'close-btn' | 'confirm-btn' | 'overlay'",
+      "description_zh": "0.34.0。关闭按钮时触发。详细类型定义。type CalendarTrigger = 'close-btn' | 'confirm-btn' | 'overlay'",
+      "default": "",
+      "value": "",
+      "type": "(trigger: CalendarTrigger)"
+    },
+    "bindconfirm": {
+      "description": "点击确认按钮时触发",
+      "description_zh": "点击确认按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: timestamp)"
+    },
+    "bindscroll": {
+      "description": "1.4.6。滚动时触发",
+      "description_zh": "1.4.6。滚动时触发",
+      "default": "",
+      "value": "",
+      "type": "({scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY})"
+    },
+    "bindselect": {
+      "description": "0.28.0。点击日期时触发",
+      "description_zh": "0.28.0。点击日期时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: timestamp)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/calendar",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/calendar",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Calendar"
+}

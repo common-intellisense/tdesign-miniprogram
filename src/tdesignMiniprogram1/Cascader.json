@@ -1,0 +1,142 @@
+{
+  "name": "TCascader",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "close-btn": {
+      "description": "关闭按钮。通用类型定义",
+      "description_zh": "关闭按钮。通用类型定义",
+      "default": "true",
+      "value": "",
+      "type": "Boolean / Slot",
+      "required": false,
+      "version": ""
+    },
+    "keys": {
+      "description": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "description_zh": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "options": {
+      "description": "可选项数据源。TS 类型：Array<CascaderOption>",
+      "description_zh": "可选项数据源。TS 类型：Array<CascaderOption>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "placeholder": {
+      "description": "未选中时的提示文案",
+      "description_zh": "未选中时的提示文案",
+      "default": "选择选项",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "sub-titles": {
+      "description": "每级展示的次标题。TS 类型：Array<string>",
+      "description_zh": "每级展示的次标题。TS 类型：Array<string>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "展示风格。可选项：step/tab",
+      "description_zh": "展示风格。可选项：step/tab",
+      "default": "step",
+      "value": "",
+      "type": "step/tab",
+      "required": false,
+      "version": ""
+    },
+    "title": {
+      "description": "标题。通用类型定义",
+      "description_zh": "标题。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选项值",
+      "description_zh": "选项值",
+      "default": "null",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选项值。非受控属性",
+      "description_zh": "选项值。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "是否展示",
+      "description_zh": "是否展示",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "1.0.1。值发生变更时触发",
+      "description_zh": "1.0.1。值发生变更时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: string | number, selectedOptions: string[])"
+    },
+    "bindclose": {
+      "description": "1.0.1。关闭时触发。详细类型定义。type TriggerSource = 'overlay' | 'close-btn' | 'finish'",
+      "description_zh": "1.0.1。关闭时触发。详细类型定义。type TriggerSource = 'overlay' | 'close-btn' | 'finish'",
+      "default": "",
+      "value": "",
+      "type": "(trigger: TriggerSource)"
+    },
+    "bindpick": {
+      "description": "1.0.1。选择后触发",
+      "description_zh": "1.0.1。选择后触发",
+      "default": "",
+      "value": "",
+      "type": "(value: string | number, index: number)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/cascader",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/cascader",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Cascader"
+}

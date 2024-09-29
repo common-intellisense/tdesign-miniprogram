@@ -1,0 +1,88 @@
+{
+  "name": "TSwipeCell",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用滑动",
+      "description_zh": "是否禁用滑动",
+      "default": "-",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "left": {
+      "description": "左侧滑动操作项。所有行为同 right。TS 类型：Array<SwipeActionItem>",
+      "description_zh": "左侧滑动操作项。所有行为同 right。TS 类型：Array<SwipeActionItem>",
+      "default": "-",
+      "value": "",
+      "type": "Array / Slot",
+      "required": false,
+      "version": ""
+    },
+    "opened": {
+      "description": "操作项是否呈现为打开态，值为数组时表示分别控制左右滑动的展开和收起状态。TS 类型：boolean | Array<boolean>",
+      "description_zh": "操作项是否呈现为打开态，值为数组时表示分别控制左右滑动的展开和收起状态。TS 类型：boolean | Array<boolean>",
+      "default": "false",
+      "value": "",
+      "type": "Boolean / Array",
+      "required": false,
+      "version": ""
+    },
+    "right": {
+      "description": "右侧滑动操作项。有两种定义方式，一种是使用数组，二种是使用插槽。right.text 表示操作文本，right.className 表示操作项类名，right.style 表示操作项样式，right.onClick 表示点击操作项后执行的回调函数。示例：[{ text: '删除', icon: 'delete', style: 'background-color: red', onClick: () => {} }]。TS 类型：Array<SwipeActionItem> interface SwipeActionItem {text?: string; icon?: string | object, className?: string; style?: string; onClick?: () => void; [key: string]: any }。详细类型定义",
+      "description_zh": "右侧滑动操作项。有两种定义方式，一种是使用数组，二种是使用插槽。right.text 表示操作文本，right.className 表示操作项类名，right.style 表示操作项样式，right.onClick 表示点击操作项后执行的回调函数。示例：[{ text: '删除', icon: 'delete', style: 'background-color: red', onClick: () => {} }]。TS 类型：Array<SwipeActionItem> interface SwipeActionItem {text?: string; icon?: string | object, className?: string; style?: string; onClick?: () => void; [key: string]: any }。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Array / Slot",
+      "required": false,
+      "version": ""
+    },
+    "bindclick": {
+      "description": "操作项点击时触发（插槽写法组件不触发，业务侧自定义内容和事件）。详细类型定义。type SwipeSource = 'left' | 'right'",
+      "description_zh": "操作项点击时触发（插槽写法组件不触发，业务侧自定义内容和事件）。详细类型定义。type SwipeSource = 'left' | 'right'",
+      "default": "",
+      "value": "",
+      "type": "(action: SwipeActionItem, source: SwipeSource)"
+    },
+    "binddragend": {
+      "description": "滑动结束事件",
+      "description_zh": "滑动结束事件",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "binddragstart": {
+      "description": "滑动开始事件",
+      "description_zh": "滑动开始事件",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/swipe-cell",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/swipe-cell",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "SwipeCell"
+}

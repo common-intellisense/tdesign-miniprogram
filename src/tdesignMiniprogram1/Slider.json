@@ -1,0 +1,178 @@
+{
+  "name": "TSlider",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "colors": {
+      "description": "已废弃。颜色，[已选择, 未选择]。TS 类型：Array<string>",
+      "description_zh": "已废弃。颜色，[已选择, 未选择]。TS 类型：Array<string>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用组件",
+      "description_zh": "是否禁用组件",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "disabled-color": {
+      "description": "已废弃。禁用状态滑动条的颜色，[已选, 未选]。TS 类型：Array<string>",
+      "description_zh": "已废弃。禁用状态滑动条的颜色，[已选, 未选]。TS 类型：Array<string>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "滑块当前值文本。值为 true 显示默认文案；值为 false 不显示滑块当前值文本；值为 ${value}% 则表示组件会根据占位符渲染文案；值类型为函数时，参数 value 标识滑块值，参数 position=start 表示范围滑块的起始值，参数 position=end 表示范围滑块的终点值。TS 类型：string | boolean",
+      "description_zh": "滑块当前值文本。值为 true 显示默认文案；值为 false 不显示滑块当前值文本；值为 ${value}% 则表示组件会根据占位符渲染文案；值类型为函数时，参数 value 标识滑块值，参数 position=start 表示范围滑块的起始值，参数 position=end 表示范围滑块的终点值。TS 类型：string | boolean",
+      "default": "false",
+      "value": "",
+      "type": "String / Boolean",
+      "required": false,
+      "version": ""
+    },
+    "marks": {
+      "description": "刻度标记，示例：[0, 10, 40, 200] 或者 { 5:  '5¥', 10: '10%' }。TS 类型：Record<number, string> | Array<number>",
+      "description_zh": "刻度标记，示例：[0, 10, 40, 200] 或者 { 5:  '5¥', 10: '10%' }。TS 类型：Record<number, string> | Array<number>",
+      "default": "{}",
+      "value": "",
+      "type": "Object / Array",
+      "required": false,
+      "version": ""
+    },
+    "max": {
+      "description": "滑块范围最大值",
+      "description_zh": "滑块范围最大值",
+      "default": "100",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "min": {
+      "description": "滑块范围最小值",
+      "description_zh": "滑块范围最小值",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "range": {
+      "description": "双游标滑块",
+      "description_zh": "双游标滑块",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "show-extreme-value": {
+      "description": "是否边界值",
+      "description_zh": "是否边界值",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "step": {
+      "description": "步长",
+      "description_zh": "步长",
+      "default": "1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "0.30.0。滑块风格。可选项：default/capsule",
+      "description_zh": "0.30.0。滑块风格。可选项：default/capsule",
+      "default": "default",
+      "value": "",
+      "type": "default/capsule",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "滑块值。TS 类型：SliderValue type SliderValue = number | Array<number>。详细类型定义",
+      "description_zh": "滑块值。TS 类型：SliderValue type SliderValue = number | Array<number>。详细类型定义",
+      "default": "0",
+      "value": "",
+      "type": "Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "滑块值。非受控属性。TS 类型：SliderValue type SliderValue = number | Array<number>。详细类型定义",
+      "description_zh": "滑块值。非受控属性。TS 类型：SliderValue type SliderValue = number | Array<number>。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "vertical": {
+      "description": "是否是垂直的滑块（渲染垂直滑块时，默认高度为400rpx，可通过修改--td-slider-bar-height来自定义高度）",
+      "description_zh": "是否是垂直的滑块（渲染垂直滑块时，默认高度为400rpx，可通过修改--td-slider-bar-height来自定义高度）",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "滑块值变化时触发",
+      "description_zh": "滑块值变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: SliderValue)"
+    },
+    "binddragend": {
+      "description": "结束拖动时触发",
+      "description_zh": "结束拖动时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: SliderValue, e: TouchEvent)"
+    },
+    "binddragstart": {
+      "description": "开始拖动时触发",
+      "description_zh": "开始拖动时触发",
+      "default": "",
+      "value": "",
+      "type": "(e: TouchEvent)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/slider",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/slider",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Slider"
+}

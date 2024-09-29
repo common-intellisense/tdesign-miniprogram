@@ -1,0 +1,85 @@
+{
+  "name": "TTabPanel",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "badge-props": {
+      "description": "透传至 Badge 组件",
+      "description_zh": "透传至 Badge 组件",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用当前选项卡",
+      "description_zh": "是否禁用当前选项卡",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "1.0.0-rc.1。图标，传对象则透传至 Icon",
+      "description_zh": "1.0.0-rc.1。图标，传对象则透传至 Icon",
+      "default": "-",
+      "value": "",
+      "type": "String / Object",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "选项卡名称",
+      "description_zh": "选项卡名称",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "panel": {
+      "description": "用于自定义选项卡面板内容。通用类型定义",
+      "description_zh": "用于自定义选项卡面板内容。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选项卡的值，唯一标识。TS 类型：TabValue，Tabs API Documents。详细类型定义",
+      "description_zh": "选项卡的值，唯一标识。TS 类型：TabValue，Tabs API Documents。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/tabs",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/tabs",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "TabPanel"
+}

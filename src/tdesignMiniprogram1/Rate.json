@@ -1,0 +1,164 @@
+{
+  "name": "TRate",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "allow-half": {
+      "description": "是否允许半选",
+      "description_zh": "是否允许半选",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "color": {
+      "description": "0.30.0。评分图标的颜色，样式中默认为 #ED7B2F。一个值表示设置选中高亮的五角星颜色，示例：[选中颜色]。数组则表示分别设置 选中高亮的五角星颜色 和 未选中暗灰的五角星颜色，[选中颜色，未选中颜色]。示例：['#ED7B2F', '#E3E6EB']。TS 类型：string | Array<string>",
+      "description_zh": "0.30.0。评分图标的颜色，样式中默认为 #ED7B2F。一个值表示设置选中高亮的五角星颜色，示例：[选中颜色]。数组则表示分别设置 选中高亮的五角星颜色 和 未选中暗灰的五角星颜色，[选中颜色，未选中颜色]。示例：['#ED7B2F', '#E3E6EB']。TS 类型：string | Array<string>",
+      "default": "'#ED7B2F'",
+      "value": "",
+      "type": "String / Array",
+      "required": false,
+      "version": ""
+    },
+    "count": {
+      "description": "评分的数量",
+      "description_zh": "评分的数量",
+      "default": "5",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用评分",
+      "description_zh": "是否禁用评分",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "gap": {
+      "description": "评分图标的间距",
+      "description_zh": "评分图标的间距",
+      "default": "8",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "0.30.0。自定义评分图标，[选中图标，未选中图标]。TS 类型：string | string[]",
+      "description_zh": "0.30.0。自定义评分图标，[选中图标，未选中图标]。TS 类型：string | string[]",
+      "default": "-",
+      "value": "",
+      "type": "String / Array",
+      "required": false,
+      "version": ""
+    },
+    "icon-prefix": {
+      "description": "定义图标前缀",
+      "description_zh": "定义图标前缀",
+      "default": "undefined",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "placement": {
+      "description": "选择评分弹框的位置，值为空字符表示不显示评分弹框。可选项：top / bottom / ''",
+      "description_zh": "选择评分弹框的位置，值为空字符表示不显示评分弹框。可选项：top / bottom / ''",
+      "default": "top",
+      "value": "",
+      "type": "top / bottom /",
+      "required": false,
+      "version": ""
+    },
+    "show-text": {
+      "description": "是否显示对应的辅助文字",
+      "description_zh": "是否显示对应的辅助文字",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "size": {
+      "description": "评分图标的大小",
+      "description_zh": "评分图标的大小",
+      "default": "24px",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "texts": {
+      "description": "评分等级对应的辅助文字。组件内置默认值为：['极差', '失望', '一般', '满意', '惊喜']。自定义值示例：['1分', '2分', '3分', '4分', '5分']。TS 类型：Array<string>",
+      "description_zh": "评分等级对应的辅助文字。组件内置默认值为：['极差', '失望', '一般', '满意', '惊喜']。自定义值示例：['1分', '2分', '3分', '4分', '5分']。TS 类型：Array<string>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选择评分的值",
+      "description_zh": "选择评分的值",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选择评分的值。非受控属性",
+      "description_zh": "选择评分的值。非受控属性",
+      "default": "undefined",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "variant": {
+      "description": "已废弃。形状类型，有描边类型和填充类型两种。可选项：outline/filled",
+      "description_zh": "已废弃。形状类型，有描边类型和填充类型两种。可选项：outline/filled",
+      "default": "outline",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "评分数改变时触发",
+      "description_zh": "评分数改变时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: number)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/rate",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/rate",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Rate"
+}

@@ -1,0 +1,117 @@
+{
+  "name": "TTag",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "closable": {
+      "description": "标签是否可关闭。通用类型定义",
+      "description_zh": "标签是否可关闭。通用类型定义",
+      "default": "false",
+      "value": "",
+      "type": "Boolean / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "标签禁用态，失效标签不能触发事件。默认风格（theme=default）才有禁用态",
+      "description_zh": "标签禁用态，失效标签不能触发事件。默认风格（theme=default）才有禁用态",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "icon": {
+      "description": "标签中的图标，可自定义图标呈现。通用类型定义",
+      "description_zh": "标签中的图标，可自定义图标呈现。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "max-width": {
+      "description": "标签最大宽度，宽度超出后会出现省略号。示例：'50px' / 80",
+      "description_zh": "标签最大宽度，宽度超出后会出现省略号。示例：'50px' / 80",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "shape": {
+      "description": "标签类型，有三种：方形、圆角方形、标记型。可选项：square/round/mark",
+      "description_zh": "标签类型，有三种：方形、圆角方形、标记型。可选项：square/round/mark",
+      "default": "square",
+      "value": "",
+      "type": "square/round/mark",
+      "required": false,
+      "version": ""
+    },
+    "size": {
+      "description": "标签尺寸。可选项：small/medium/large/extra-large",
+      "description_zh": "标签尺寸。可选项：small/medium/large/extra-large",
+      "default": "medium",
+      "value": "",
+      "type": "small/medium/large/extra-large",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "组件风格，用于描述组件不同的应用场景。可选项：default/primary/warning/danger/success",
+      "description_zh": "组件风格，用于描述组件不同的应用场景。可选项：default/primary/warning/danger/success",
+      "default": "default",
+      "value": "",
+      "type": "default/primary/warning/danger/success",
+      "required": false,
+      "version": ""
+    },
+    "variant": {
+      "description": "标签风格变体。可选项：dark/light/outline/light-outline",
+      "description_zh": "标签风格变体。可选项：dark/light/outline/light-outline",
+      "default": "dark",
+      "value": "",
+      "type": "dark/light/outline/light-outline",
+      "required": false,
+      "version": ""
+    },
+    "bindclick": {
+      "description": "点击时触发",
+      "description_zh": "点击时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindclose": {
+      "description": "如果关闭按钮存在，点击关闭按钮时触发",
+      "description_zh": "如果关闭按钮存在，点击关闭按钮时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/tag",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/tag",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Tag"
+}

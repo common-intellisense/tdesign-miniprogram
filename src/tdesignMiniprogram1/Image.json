@@ -1,0 +1,144 @@
+{
+  "name": "TImage",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "error": {
+      "description": "加载失败时显示的内容。值为 default 则表示使用默认加载失败风格；值为空或者 slot 表示使用插槽渲染，插槽名称为 error；值为其他则表示普通文本内容，如“加载失败”。通用类型定义",
+      "description_zh": "加载失败时显示的内容。值为 default 则表示使用默认加载失败风格；值为空或者 slot 表示使用插槽渲染，插槽名称为 error；值为其他则表示普通文本内容，如“加载失败”。通用类型定义",
+      "default": "'default'",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "height": {
+      "description": "高度，默认单位为px",
+      "description_zh": "高度，默认单位为px",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "lazy": {
+      "description": "是否开启图片懒加载",
+      "description_zh": "是否开启图片懒加载",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "loading": {
+      "description": "加载态内容。值为 default 则表示使用默认加载中风格；值为其他则表示普通文本内容，如“加载中”。通用类型定义",
+      "description_zh": "加载态内容。值为 default 则表示使用默认加载中风格；值为其他则表示普通文本内容，如“加载中”。通用类型定义",
+      "default": "'default'",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "mode": {
+      "description": "图片裁剪、缩放的模式；小程序官方文档。可选项：scaleToFill/aspectFit/aspectFill/widthFix/heightFix/top/bottom/center/left/right/top left/top right/bottom left/bottom right",
+      "description_zh": "图片裁剪、缩放的模式；小程序官方文档。可选项：scaleToFill/aspectFit/aspectFill/widthFix/heightFix/top/bottom/center/left/right/top left/top right/bottom left/bottom right",
+      "default": "scaleToFill",
+      "value": "",
+      "type": "scaleToFill/aspectFit/aspectFill/widthFix/heightFix/top/bottom/center/left/right/top left/top right/bottom left/bottom right",
+      "required": false,
+      "version": ""
+    },
+    "shape": {
+      "description": "图片圆角类型。可选项：circle/round/square",
+      "description_zh": "图片圆角类型。可选项：circle/round/square",
+      "default": "square",
+      "value": "",
+      "type": "circle/round/square",
+      "required": false,
+      "version": ""
+    },
+    "show-menu-by-longpress": {
+      "description": "长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。",
+      "description_zh": "长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "src": {
+      "description": "图片链接",
+      "description_zh": "图片链接",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "t-id": {
+      "description": "1.2.10。图片标签id",
+      "description_zh": "1.2.10。图片标签id",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "webp": {
+      "description": "默认不解析 webP 格式，只支持网络资源",
+      "description_zh": "默认不解析 webP 格式，只支持网络资源",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "width": {
+      "description": "宽度，默认单位为px",
+      "description_zh": "宽度，默认单位为px",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "binderror": {
+      "description": "图片加载失败时触发",
+      "description_zh": "图片加载失败时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindload": {
+      "description": "图片加载完成时触发",
+      "description_zh": "图片加载完成时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/image",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/image",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Image"
+}

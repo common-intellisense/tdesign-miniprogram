@@ -1,0 +1,67 @@
+{
+  "name": "TDivider",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "align": {
+      "description": "文本位置（仅在水平分割线有效）。可选项：left/right/center",
+      "description_zh": "文本位置（仅在水平分割线有效）。可选项：left/right/center",
+      "default": "center",
+      "value": "",
+      "type": "left/right/center",
+      "required": false,
+      "version": ""
+    },
+    "content": {
+      "description": "子元素。通用类型定义",
+      "description_zh": "子元素。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "dashed": {
+      "description": "是否虚线（仅在水平分割线有效）",
+      "description_zh": "是否虚线（仅在水平分割线有效）",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "layout": {
+      "description": "分隔线类型有两种：水平和垂直。可选项：horizontal/vertical",
+      "description_zh": "分隔线类型有两种：水平和垂直。可选项：horizontal/vertical",
+      "default": "horizontal",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/divider",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/divider",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Divider"
+}

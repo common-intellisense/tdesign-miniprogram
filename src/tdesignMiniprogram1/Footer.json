@@ -1,0 +1,85 @@
+{
+  "name": "TFooter",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "copyright": {
+      "description": "已废弃。版权信息，type 为text生效",
+      "description_zh": "已废弃。版权信息，type 为text生效",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "links": {
+      "description": "1.0.0。链接列表。name 表示链接名称， url 表示链接 page 路径，目前只支持小程序内部跳转，openType 表示跳转方式。TS 类型：Array<LinkObj> interface LinkObj { name: string; url?: string; openType?: 'navigate' | 'redirect' | 'relaunch' | 'switchTab' | 'navigateBack' }。详细类型定义",
+      "description_zh": "1.0.0。链接列表。name 表示链接名称， url 表示链接 page 路径，目前只支持小程序内部跳转，openType 表示跳转方式。TS 类型：Array<LinkObj> interface LinkObj { name: string; url?: string; openType?: 'navigate' | 'redirect' | 'relaunch' | 'switchTab' | 'navigateBack' }。详细类型定义",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "logo": {
+      "description": "图标配置。logo.icon 表示图标链接地址，logo.title 表示标题文本，logo.url 表示链接。TS 类型：FooterLogo interface FooterLogo { icon: string; title?: string; url?: string }。详细类型定义",
+      "description_zh": "图标配置。logo.icon 表示图标链接地址，logo.title 表示标题文本，logo.url 表示链接。TS 类型：FooterLogo interface FooterLogo { icon: string; title?: string; url?: string }。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "text": {
+      "description": "1.0.0。版权信息",
+      "description_zh": "1.0.0。版权信息",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "text-link-list": {
+      "description": "已废弃。链接列表，type 为text生效。name 表示链接名称， url 表示链接 page 路径，目前只支持小程序内部跳转，openType 表示跳转方式。TS 类型：Array<LinkObj> interface LinkObj { name: string; url?: string; openType?: 'navigate' | 'redirect' | 'relaunch' | 'switchTab' | 'navigateBack' }。详细类型定义",
+      "description_zh": "已废弃。链接列表，type 为text生效。name 表示链接名称， url 表示链接 page 路径，目前只支持小程序内部跳转，openType 表示跳转方式。TS 类型：Array<LinkObj> interface LinkObj { name: string; url?: string; openType?: 'navigate' | 'redirect' | 'relaunch' | 'switchTab' | 'navigateBack' }。详细类型定义",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "已废弃。页脚展示类型。可选项：text/logo",
+      "description_zh": "已废弃。页脚展示类型。可选项：text/logo",
+      "default": "'text'",
+      "value": "",
+      "type": "text/logo",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/footer",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/footer",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Footer"
+}

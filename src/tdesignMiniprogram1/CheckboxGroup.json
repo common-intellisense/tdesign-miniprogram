@@ -1,0 +1,94 @@
+{
+  "name": "TCheckboxGroup",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "borderless": {
+      "description": "是否开启无边框模式",
+      "description_zh": "是否开启无边框模式",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "max": {
+      "description": "支持最多选中的数量",
+      "description_zh": "支持最多选中的数量",
+      "default": "undefined",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "name": {
+      "description": "统一设置内部复选框 HTML 属性",
+      "description_zh": "统一设置内部复选框 HTML 属性",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "options": {
+      "description": "以配置形式设置子元素。示例1：['北京', '上海'] ，示例2: [{ label: '全选', checkAll: true }, { label: '上海', value: 'shanghai' }]。checkAll 值为 true 表示当前选项为「全选选项」。TS 类型：Array<CheckboxOption> type CheckboxOption = string | number | CheckboxOptionObj interface CheckboxOptionObj { label?: string; value?: string | number; disabled?: boolean; checkAll?: true }。详细类型定义",
+      "description_zh": "以配置形式设置子元素。示例1：['北京', '上海'] ，示例2: [{ label: '全选', checkAll: true }, { label: '上海', value: 'shanghai' }]。checkAll 值为 true 表示当前选项为「全选选项」。TS 类型：Array<CheckboxOption> type CheckboxOption = string | number | CheckboxOptionObj interface CheckboxOptionObj { label?: string; value?: string | number; disabled?: boolean; checkAll?: true }。详细类型定义",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选中值。TS 类型：T type CheckboxGroupValue = Array<string | number | boolean>。详细类型定义",
+      "description_zh": "选中值。TS 类型：T type CheckboxGroupValue = Array<string | number | boolean>。详细类型定义",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选中值。非受控属性。TS 类型：T type CheckboxGroupValue = Array<string | number | boolean>。详细类型定义",
+      "description_zh": "选中值。非受控属性。TS 类型：T type CheckboxGroupValue = Array<string | number | boolean>。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "值变化时触发。context 表示当前点击项内容。",
+      "description_zh": "值变化时触发。context 表示当前点击项内容。",
+      "default": "",
+      "value": "",
+      "type": "(value: CheckboxGroupValue, context: { value: boolean|number|string, label: boolean|number|string })"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/checkbox",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/checkbox",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-checkbox"
+  ],
+  "filename": "CheckboxGroup"
+}

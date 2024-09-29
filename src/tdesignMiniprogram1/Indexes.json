@@ -1,0 +1,81 @@
+{
+  "name": "TIndexes",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "index-list": {
+      "description": "0.32.0。索引字符列表。不传默认 A-Z。TS 类型：string [] | number[]",
+      "description_zh": "0.32.0。索引字符列表。不传默认 A-Z。TS 类型：string [] | number[]",
+      "default": "-",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "list": {
+      "description": "已废弃。索引列表的列表数据。每个元素包含三个子元素，index(string)：索引值，例如1，2，3，...或A，B，C等；title(string): 索引标题，可不填将默认设为索引值；children(Array<{title: string}>): 子元素列表，title为子元素的展示文案。TS 类型：ListItem[]  interface ListItem { title: string;  index: string;  children: { title: string; [key: string]: any} [] }。详细类型定义",
+      "description_zh": "已废弃。索引列表的列表数据。每个元素包含三个子元素，index(string)：索引值，例如1，2，3，...或A，B，C等；title(string): 索引标题，可不填将默认设为索引值；children(Array<{title: string}>): 子元素列表，title为子元素的展示文案。TS 类型：ListItem[]  interface ListItem { title: string;  index: string;  children: { title: string; [key: string]: any} [] }。详细类型定义",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "sticky": {
+      "description": "索引是否吸顶，默认为true。TS 类型：Boolean",
+      "description_zh": "索引是否吸顶，默认为true。TS 类型：Boolean",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "sticky-offset": {
+      "description": "1.0.0。锚点吸顶时与顶部的距离",
+      "description_zh": "1.0.0。锚点吸顶时与顶部的距离",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "0.34.0。索引发生变更时触发事件",
+      "description_zh": "0.34.0。索引发生变更时触发事件",
+      "default": "",
+      "value": "",
+      "type": "(index: string | number)"
+    },
+    "bindselect": {
+      "description": "点击侧边栏时触发事件",
+      "description_zh": "点击侧边栏时触发事件",
+      "default": "",
+      "value": "",
+      "type": "(index: string | number)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/indexes",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/indexes",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Indexes"
+}

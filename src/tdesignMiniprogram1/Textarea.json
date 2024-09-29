@@ -1,0 +1,289 @@
+{
+  "name": "TTextarea",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "adjust-position": {
+      "description": "键盘弹起时，是否自动上推页面",
+      "description_zh": "键盘弹起时，是否自动上推页面",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "autofocus": {
+      "description": "自动聚焦，拉起键盘",
+      "description_zh": "自动聚焦，拉起键盘",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "autosize": {
+      "description": "是否自动增高，值为 true 时，style.height 不生效。支持传入对象，如 { maxHeight: 120, minHeight: 20 }。TS 类型：boolean | { maxHeight?: number, minHeight?: number }",
+      "description_zh": "是否自动增高，值为 true 时，style.height 不生效。支持传入对象，如 { maxHeight: 120, minHeight: 20 }。TS 类型：boolean | { maxHeight?: number, minHeight?: number }",
+      "default": "false",
+      "value": "",
+      "type": "Boolean / Object",
+      "required": false,
+      "version": ""
+    },
+    "bordered": {
+      "description": "是否显示外边框",
+      "description_zh": "是否显示外边框",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "confirm-hold": {
+      "description": "点击键盘右下角按钮时是否保持键盘不收起点",
+      "description_zh": "点击键盘右下角按钮时是否保持键盘不收起点",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "confirm-type": {
+      "description": "设置键盘右下角按钮的文字，仅在 type='text'时生效。可选项：return/send/search/next/go/done。TS 类型：'return' | 'send' | 'search' | 'next' | 'go' | 'done'",
+      "description_zh": "设置键盘右下角按钮的文字，仅在 type='text'时生效。可选项：return/send/search/next/go/done。TS 类型：'return' | 'send' | 'search' | 'next' | 'go' | 'done'",
+      "default": "return",
+      "value": "",
+      "type": "return/send/search/next/go/done",
+      "required": false,
+      "version": ""
+    },
+    "cursor": {
+      "description": "指定 focus 时的光标位置",
+      "description_zh": "指定 focus 时的光标位置",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "cursor-spacing": {
+      "description": "指定光标与键盘的距离。取textarea距离底部的距离和cursor-spacing指定的距离的最小值作为光标与键盘的距离",
+      "description_zh": "指定光标与键盘的距离。取textarea距离底部的距离和cursor-spacing指定的距离的最小值作为光标与键盘的距离",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "disable-default-padding": {
+      "description": "是否去掉 iOS 下的默认内边距",
+      "description_zh": "是否去掉 iOS 下的默认内边距",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用文本框",
+      "description_zh": "是否禁用文本框",
+      "default": "undefined",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "fixed": {
+      "description": "如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true",
+      "description_zh": "如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "focus": {
+      "description": "自动聚焦",
+      "description_zh": "自动聚焦",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "hold-keyboard": {
+      "description": "focus时，点击页面的时候不收起键盘",
+      "description_zh": "focus时，点击页面的时候不收起键盘",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "indicator": {
+      "description": "显示文本计数器，如 0/140。当 maxlength < 0 && maxcharacter < 0 成立时， indicator无效",
+      "description_zh": "显示文本计数器，如 0/140。当 maxlength < 0 && maxcharacter < 0 成立时， indicator无效",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "左侧文本。通用类型定义",
+      "description_zh": "左侧文本。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "maxcharacter": {
+      "description": "用户最多可以输入的字符个数，一个中文汉字表示两个字符长度",
+      "description_zh": "用户最多可以输入的字符个数，一个中文汉字表示两个字符长度",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "maxlength": {
+      "description": "用户最多可以输入的字符个数，值为 -1 的时候不限制最大长度",
+      "description_zh": "用户最多可以输入的字符个数，值为 -1 的时候不限制最大长度",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "placeholder": {
+      "description": "占位符",
+      "description_zh": "占位符",
+      "default": "undefined",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "placeholder-style": {
+      "description": "指定 placeholder 的样式，目前仅支持 color ,font-size和font-weight",
+      "description_zh": "指定 placeholder 的样式，目前仅支持 color ,font-size和font-weight",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "selection-end": {
+      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+      "description_zh": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "selection-start": {
+      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+      "description_zh": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "show-confirm-bar": {
+      "description": "是否显示键盘上方带有”完成“按钮那一栏",
+      "description_zh": "是否显示键盘上方带有”完成“按钮那一栏",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "文本框值。TS 类型：TextareaValue type TextareaValue = string | number。详细类型定义",
+      "description_zh": "文本框值。TS 类型：TextareaValue type TextareaValue = string | number。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "文本框值。非受控属性。TS 类型：TextareaValue type TextareaValue = string | number。详细类型定义",
+      "description_zh": "文本框值。非受控属性。TS 类型：TextareaValue type TextareaValue = string | number。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "bindblur": {
+      "description": "失去焦点时触发",
+      "description_zh": "失去焦点时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TextareaValue, cursor: number)"
+    },
+    "bindchange": {
+      "description": "输入内容变化时触发",
+      "description_zh": "输入内容变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TextareaValue, cursor: number)"
+    },
+    "bindenter": {
+      "description": "点击完成时触发",
+      "description_zh": "点击完成时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TextareaValue)"
+    },
+    "bindfocus": {
+      "description": "获得焦点时触发",
+      "description_zh": "获得焦点时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TextareaValue)"
+    },
+    "bindkeyboardheightchange": {
+      "description": "键盘高度发生变化的时候触发此事件",
+      "description_zh": "键盘高度发生变化的时候触发此事件",
+      "default": "",
+      "value": "",
+      "type": "(height: number, duration: number)"
+    },
+    "bindline-change": {
+      "description": "行高发生变化时触发",
+      "description_zh": "行高发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "(value: TextareaValue)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/textarea",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/textarea",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Textarea"
+}

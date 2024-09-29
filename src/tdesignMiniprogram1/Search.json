@@ -1,0 +1,307 @@
+{
+  "name": "TSearch",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "action": {
+      "description": "自定义右侧操作按钮文字。通用类型定义",
+      "description_zh": "自定义右侧操作按钮文字。通用类型定义",
+      "default": "''",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "adjust-position": {
+      "description": "键盘弹起时，是否自动上推页面",
+      "description_zh": "键盘弹起时，是否自动上推页面",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "always-embed": {
+      "description": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)",
+      "description_zh": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "center": {
+      "description": "是否居中",
+      "description_zh": "是否居中",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "clearable": {
+      "description": "是否启用清除控件",
+      "description_zh": "是否启用清除控件",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "confirm-hold": {
+      "description": "点击键盘右下角按钮时是否保持键盘不收起",
+      "description_zh": "点击键盘右下角按钮时是否保持键盘不收起",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "confirm-type": {
+      "description": "设置键盘右下角按钮的文字，仅在type='text'时生效。具体释义：send 右下角按钮为“发送”；search 右下角按钮为“搜索”；next 右下角按钮为“下一个”；go 右下角按钮为“前往”；done 右下角按钮为“完成”。小程序官方文档。可选项：send/search/next/go/done",
+      "description_zh": "设置键盘右下角按钮的文字，仅在type='text'时生效。具体释义：send 右下角按钮为“发送”；search 右下角按钮为“搜索”；next 右下角按钮为“下一个”；go 右下角按钮为“前往”；done 右下角按钮为“完成”。小程序官方文档。可选项：send/search/next/go/done",
+      "default": "search",
+      "value": "",
+      "type": "send/search/next/go/done",
+      "required": false,
+      "version": ""
+    },
+    "cursor": {
+      "description": "必需。指定 focus 时的光标位置",
+      "description_zh": "必需。指定 focus 时的光标位置",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": true,
+      "version": ""
+    },
+    "cursor-spacing": {
+      "description": "搜索框聚焦时底部与键盘的距离",
+      "description_zh": "搜索框聚焦时底部与键盘的距离",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "disabled": {
+      "description": "是否禁用",
+      "description_zh": "是否禁用",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "focus": {
+      "description": "是否聚焦",
+      "description_zh": "是否聚焦",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "hold-keyboard": {
+      "description": "focus时，点击页面的时候不收起键盘",
+      "description_zh": "focus时，点击页面的时候不收起键盘",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "label": {
+      "description": "已废弃。左侧文本",
+      "description_zh": "已废弃。左侧文本",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "left-icon": {
+      "description": "左侧图标。如果需要使用 Slot 进行自定义，必须将该值设置为假值。通用类型定义",
+      "description_zh": "左侧图标。如果需要使用 Slot 进行自定义，必须将该值设置为假值。通用类型定义",
+      "default": "'search'",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "maxcharacter": {
+      "description": "用户最多可以输入的字符个数，一个中文汉字表示两个字符长度。maxcharacter 和 maxlength 二选一使用",
+      "description_zh": "用户最多可以输入的字符个数，一个中文汉字表示两个字符长度。maxcharacter 和 maxlength 二选一使用",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "maxlength": {
+      "description": "用户最多可以输入的文本长度，一个中文等于一个计数长度。默认为 -1，不限制输入长度。maxcharacter 和 maxlength 二选一使用",
+      "description_zh": "用户最多可以输入的文本长度，一个中文等于一个计数长度。默认为 -1，不限制输入长度。maxcharacter 和 maxlength 二选一使用",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "placeholder": {
+      "description": "占位符",
+      "description_zh": "占位符",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "placeholder-class": {
+      "description": "指定 placeholder 的样式类",
+      "description_zh": "指定 placeholder 的样式类",
+      "default": "input-placeholder",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "placeholder-style": {
+      "description": "必需。指定 placeholder 的样式",
+      "description_zh": "必需。指定 placeholder 的样式",
+      "default": "-",
+      "value": "",
+      "type": "String",
+      "required": true,
+      "version": ""
+    },
+    "result-list": {
+      "description": "预览结果列表。TS 类型：Array<string>",
+      "description_zh": "预览结果列表。TS 类型：Array<string>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "right-icon": {
+      "description": "已废弃。右侧图标。通用类型定义",
+      "description_zh": "已废弃。右侧图标。通用类型定义",
+      "default": "'close-circle-filled'",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "selection-end": {
+      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+      "description_zh": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "selection-start": {
+      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+      "description_zh": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+      "default": "-1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "shape": {
+      "description": "搜索框形状。可选项：square/round",
+      "description_zh": "搜索框形状。可选项：square/round",
+      "default": "'square'",
+      "value": "",
+      "type": "square/round",
+      "required": false,
+      "version": ""
+    },
+    "type": {
+      "description": "拉起键盘的类型。可选项：text/number/idcard/digit/nickname",
+      "description_zh": "拉起键盘的类型。可选项：text/number/idcard/digit/nickname",
+      "default": "'text'",
+      "value": "",
+      "type": "text/number/idcard/digit/nickname",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "值",
+      "description_zh": "值",
+      "default": "''",
+      "value": "",
+      "type": "String",
+      "required": false,
+      "version": ""
+    },
+    "bindaction-click": {
+      "description": "点击右侧操作按钮文字时触发",
+      "description_zh": "点击右侧操作按钮文字时触发",
+      "default": "",
+      "value": "",
+      "type": "({})"
+    },
+    "bindblur": {
+      "description": "失去焦点时触发",
+      "description_zh": "失去焦点时触发",
+      "default": "",
+      "value": "",
+      "type": "({ value: string })"
+    },
+    "bindchange": {
+      "description": "值发生变化时触发",
+      "description_zh": "值发生变化时触发",
+      "default": "",
+      "value": "",
+      "type": "({ value: string })"
+    },
+    "bindclear": {
+      "description": "点击清除时触发",
+      "description_zh": "点击清除时触发",
+      "default": "",
+      "value": "",
+      "type": "({ value: string })"
+    },
+    "bindfocus": {
+      "description": "聚焦时触发",
+      "description_zh": "聚焦时触发",
+      "default": "",
+      "value": "",
+      "type": "({ value: string })"
+    },
+    "bindsubmit": {
+      "description": "提交时触发",
+      "description_zh": "提交时触发",
+      "default": "",
+      "value": "",
+      "type": "({ value: string })"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/search?tab=api",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/search?tab=api",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Search"
+}

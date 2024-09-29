@@ -1,0 +1,87 @@
+{
+  "name": "TGrid",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "align": {
+      "description": "内容对齐方式。可选项：left/center",
+      "description_zh": "内容对齐方式。可选项：left/center",
+      "default": "center",
+      "value": "",
+      "type": "left/center",
+      "required": false,
+      "version": ""
+    },
+    "border": {
+      "description": "边框，默认不显示。值为 true 则显示默认边框，值类型为 object 则表示自定义边框样式。TS 类型：boolean | { color?: string; width?: string; style?: 'solid' | 'dashed' | 'dotted' | 'double' | 'groove' | 'inset' | 'outset' }",
+      "description_zh": "边框，默认不显示。值为 true 则显示默认边框，值类型为 object 则表示自定义边框样式。TS 类型：boolean | { color?: string; width?: string; style?: 'solid' | 'dashed' | 'dotted' | 'double' | 'groove' | 'inset' | 'outset' }",
+      "default": "false",
+      "value": "",
+      "type": "Boolean / Object",
+      "required": false,
+      "version": ""
+    },
+    "column": {
+      "description": "每一行的列数量；为 0 时等于固定大小",
+      "description_zh": "每一行的列数量；为 0 时等于固定大小",
+      "default": "4",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "gutter": {
+      "description": "间隔大小",
+      "description_zh": "间隔大小",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "hover": {
+      "description": "是否开启点击反馈",
+      "description_zh": "是否开启点击反馈",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "theme": {
+      "description": "宫格的风格。可选项：default/card",
+      "description_zh": "宫格的风格。可选项：default/card",
+      "default": "default",
+      "value": "",
+      "type": "default/card",
+      "required": false,
+      "version": ""
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/grid",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/grid",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [
+    "t-grid-item"
+  ],
+  "filename": "Grid"
+}

@@ -1,0 +1,196 @@
+{
+  "name": "TSwiper",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "autoplay": {
+      "description": "是否自动播放",
+      "description_zh": "是否自动播放",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "current": {
+      "description": "当前轮播在哪一项（下标）",
+      "description_zh": "当前轮播在哪一项（下标）",
+      "default": "0",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "direction": {
+      "description": "轮播滑动方向，包括横向滑动和纵向滑动两个方向。可选项：horizontal/vertical",
+      "description_zh": "轮播滑动方向，包括横向滑动和纵向滑动两个方向。可选项：horizontal/vertical",
+      "default": "horizontal",
+      "value": "",
+      "type": "horizontal/vertical",
+      "required": false,
+      "version": ""
+    },
+    "display-multiple-items": {
+      "description": "0.32.0。同时显示的滑块数量",
+      "description_zh": "0.32.0。同时显示的滑块数量",
+      "default": "1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "duration": {
+      "description": "滑动动画时长",
+      "description_zh": "滑动动画时长",
+      "default": "300",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "easing-function": {
+      "description": "0.32.0。指定 swiper 切换缓动动画类型。可选项：default/linear/easeInCubic/easeOutCubic/easeInOutCubic",
+      "description_zh": "0.32.0。指定 swiper 切换缓动动画类型。可选项：default/linear/easeInCubic/easeOutCubic/easeInOutCubic",
+      "default": "default",
+      "value": "",
+      "type": "default/linear/easeInCubic/easeOutCubic/easeInOutCubic",
+      "required": false,
+      "version": ""
+    },
+    "height": {
+      "description": "轮播的高度；默认单位 px",
+      "description_zh": "轮播的高度；默认单位 px",
+      "default": "192",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "image-props": {
+      "description": "0.34.0。透传至 Image 组件",
+      "description_zh": "0.34.0。透传至 Image 组件",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "interval": {
+      "description": "轮播间隔时间",
+      "description_zh": "轮播间隔时间",
+      "default": "5000",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "list": {
+      "description": "0.32.0。图片列表。TS 类型：string[] | SwiperList[] interface SwiperList { value: string, ariaLabel: string }。详细类型定义",
+      "description_zh": "0.32.0。图片列表。TS 类型：string[] | SwiperList[] interface SwiperList { value: string, ariaLabel: string }。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "loop": {
+      "description": "是否循环播放",
+      "description_zh": "是否循环播放",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "navigation": {
+      "description": "导航器全部配置，true 的话使用默认配置。TS 类型：SwiperNavProps | boolean，SwiperNav API Documents。详细类型定义",
+      "description_zh": "导航器全部配置，true 的话使用默认配置。TS 类型：SwiperNavProps | boolean，SwiperNav API Documents。详细类型定义",
+      "default": "true",
+      "value": "",
+      "type": "Boolean / Object / Slot",
+      "required": false,
+      "version": ""
+    },
+    "next-margin": {
+      "description": "0.32.0。后边距，可用于露出后一项的一小部分。默认单位 px",
+      "description_zh": "0.32.0。后边距，可用于露出后一项的一小部分。默认单位 px",
+      "default": "0",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "pagination-position": {
+      "description": "页码信息展示位置。可选项：top-left/top/top-right/bottom-left/bottom/bottom-right",
+      "description_zh": "页码信息展示位置。可选项：top-left/top/top-right/bottom-left/bottom/bottom-right",
+      "default": "bottom",
+      "value": "",
+      "type": "top-left/top/top-right/bottom-left/bottom/bottom-right",
+      "required": false,
+      "version": ""
+    },
+    "previous-margin": {
+      "description": "0.32.0。前边距，可用于露出前一项的一小部分。默认单位 px",
+      "description_zh": "0.32.0。前边距，可用于露出前一项的一小部分。默认单位 px",
+      "default": "0",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "snap-to-edge": {
+      "description": "0.32.0。当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素",
+      "description_zh": "0.32.0。当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "轮播切换时触发。详细类型定义。type SwiperChangeSource = 'autoplay' | 'touch' | 'nav'",
+      "description_zh": "轮播切换时触发。详细类型定义。type SwiperChangeSource = 'autoplay' | 'touch' | 'nav'",
+      "default": "",
+      "value": "",
+      "type": "(current: number, source: SwiperChangeSource)"
+    },
+    "bindclick": {
+      "description": "0.34.0。点击轮播项时触发",
+      "description_zh": "0.34.0。点击轮播项时触发",
+      "default": "",
+      "value": "",
+      "type": "(index: number)"
+    },
+    "bindimage-load": {
+      "description": "1.1.4。图片加载时触发",
+      "description_zh": "1.1.4。图片加载时触发",
+      "default": "",
+      "value": "",
+      "type": "(index: number)"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/swiper",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/swiper",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Swiper"
+}

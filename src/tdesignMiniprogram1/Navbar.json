@@ -1,0 +1,140 @@
+{
+  "name": "TNavbar",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "animation": {
+      "description": "是否添加动画效果",
+      "description_zh": "是否添加动画效果",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "capsule": {
+      "description": "左侧胶囊区域。通用类型定义",
+      "description_zh": "左侧胶囊区域。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Slot",
+      "required": false,
+      "version": ""
+    },
+    "delta": {
+      "description": "后退按钮后退层数，含义参考 wx.navigateBack，特殊的，传入 0 不会发生执行 wx.navigateBack",
+      "description_zh": "后退按钮后退层数，含义参考 wx.navigateBack，特殊的，传入 0 不会发生执行 wx.navigateBack",
+      "default": "1",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "fixed": {
+      "description": "是否固定在顶部",
+      "description_zh": "是否固定在顶部",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "left": {
+      "description": "0.26.0。左侧内容区域。通用类型定义",
+      "description_zh": "0.26.0。左侧内容区域。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Slot",
+      "required": false,
+      "version": ""
+    },
+    "left-arrow": {
+      "description": "0.26.0。是否展示左侧箭头",
+      "description_zh": "0.26.0。是否展示左侧箭头",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "title": {
+      "description": "页面标题。通用类型定义",
+      "description_zh": "页面标题。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Slot",
+      "required": false,
+      "version": ""
+    },
+    "title-max-length": {
+      "description": "标题文字最大长度，超出的范围使用 ... 表示",
+      "description_zh": "标题文字最大长度，超出的范围使用 ... 表示",
+      "default": "-",
+      "value": "",
+      "type": "Number",
+      "required": false,
+      "version": ""
+    },
+    "visible": {
+      "description": "是否显示",
+      "description_zh": "是否显示",
+      "default": "true",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "bindcomplete": {
+      "description": "navigateBack 执行完成后触发（失败或成功均会触发）",
+      "description_zh": "navigateBack 执行完成后触发（失败或成功均会触发）",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindfail": {
+      "description": "navigateBack 执行失败后触发",
+      "description_zh": "navigateBack 执行失败后触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindgo-back": {
+      "description": "点击左侧箭头时触发",
+      "description_zh": "点击左侧箭头时触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    },
+    "bindsuccess": {
+      "description": "navigateBack 执行成功后触发",
+      "description_zh": "navigateBack 执行成功后触发",
+      "default": "",
+      "value": "",
+      "type": "-"
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/navbar",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/navbar",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "Navbar"
+}

@@ -1,0 +1,92 @@
+{
+  "name": "TTreeSelect",
+  "props": {
+    "style": {
+      "description": "样式",
+      "description_zh": "样式",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "custom-style": {
+      "description": "样式，一般用于开启虚拟化组件节点场景",
+      "description_zh": "样式，一般用于开启虚拟化组件节点场景",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "height": {
+      "description": "高度，默认单位为 px",
+      "description_zh": "高度，默认单位为 px",
+      "default": "336",
+      "value": "",
+      "type": "String / Number",
+      "required": false,
+      "version": ""
+    },
+    "keys": {
+      "description": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "description_zh": "用来定义 value / label 在 options 中对应的字段别名。TS 类型：KeysType。通用类型定义",
+      "default": "-",
+      "value": "",
+      "type": "Object",
+      "required": false,
+      "version": ""
+    },
+    "multiple": {
+      "description": "是否允许多选",
+      "description_zh": "是否允许多选",
+      "default": "false",
+      "value": "",
+      "type": "Boolean",
+      "required": false,
+      "version": ""
+    },
+    "options": {
+      "description": "选项。TS 类型：Array<DataOption>",
+      "description_zh": "选项。TS 类型：Array<DataOption>",
+      "default": "[]",
+      "value": "",
+      "type": "Array",
+      "required": false,
+      "version": ""
+    },
+    "value": {
+      "description": "选中值。TS 类型：TreeSelectValue type TreeSelectValue = string | number | Array<TreeSelectValue>。详细类型定义",
+      "description_zh": "选中值。TS 类型：TreeSelectValue type TreeSelectValue = string | number | Array<TreeSelectValue>。详细类型定义",
+      "default": "-",
+      "value": "",
+      "type": "String / Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "default-value": {
+      "description": "选中值。非受控属性。TS 类型：TreeSelectValue type TreeSelectValue = string | number | Array<TreeSelectValue>。详细类型定义",
+      "description_zh": "选中值。非受控属性。TS 类型：TreeSelectValue type TreeSelectValue = string | number | Array<TreeSelectValue>。详细类型定义",
+      "default": "undefined",
+      "value": "",
+      "type": "String / Number / Array",
+      "required": false,
+      "version": ""
+    },
+    "bindchange": {
+      "description": "点击任何节点均会触发；level 代表当前点击的层级，0 代表最左侧，依次递进。详细类型定义。type TreeLevel = 0 | 1 | 2",
+      "description_zh": "点击任何节点均会触发；level 代表当前点击的层级，0 代表最左侧，依次递进。详细类型定义。type TreeLevel = 0 | 1 | 2",
+      "default": "",
+      "value": "",
+      "type": "(value: TreeSelectValue, level: TreeLevel) "
+    }
+  },
+  "link": "https://tdesign.tencent.com/miniprogram/components/tree-select",
+  "link_zh": "https://tdesign.tencent.com/miniprogram/components/tree-select",
+  "typeDetail": {},
+  "events": [],
+  "methods": [],
+  "slots": [],
+  "suggestions": [],
+  "filename": "TreeSelect"
+}
